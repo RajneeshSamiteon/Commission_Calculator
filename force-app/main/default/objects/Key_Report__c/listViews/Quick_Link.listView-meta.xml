@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quick_Link</fullName>
+    <columns>NAME</columns>
+    <columns>User__c</columns>
+    <columns>Type__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Kerridge Links</value>
+    </filters>
+    <label>Quick Link</label>
+</ListView>

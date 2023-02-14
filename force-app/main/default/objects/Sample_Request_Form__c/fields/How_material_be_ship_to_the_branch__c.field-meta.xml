@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_material_be_ship_to_the_branch__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How should material be shipped to the branch?</inlineHelpText>
+    <label>Ship Via – Branch</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Best Way Possible</fullName>
+                <default>false</default>
+                <label>Best Way Possible</label>
+            </value>
+            <value>
+                <fullName>Consolidated/Transfer Truck</fullName>
+                <default>false</default>
+                <label>Consolidated/Transfer Truck</label>
+            </value>
+            <value>
+                <fullName>Ship on next delivery</fullName>
+                <default>false</default>
+                <label>Ship on next delivery</label>
+            </value>
+            <value>
+                <fullName>Ground</fullName>
+                <default>false</default>
+                <label>Ground</label>
+            </value>
+            <value>
+                <fullName>NDA</fullName>
+                <default>false</default>
+                <label>NDA</label>
+            </value>
+            <value>
+                <fullName>2nd/3rd</fullName>
+                <default>false</default>
+                <label>2nd/3rd</label>
+            </value>
+            <value>
+                <fullName>2nd day air</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2nd day air</label>
+            </value>
+            <value>
+                <fullName>3rd day air</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3rd day air</label>
+            </value>
+            <value>
+                <fullName>Next day air - This will require Manager approval before we can order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Next day air - This will require Manager approval before we can order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

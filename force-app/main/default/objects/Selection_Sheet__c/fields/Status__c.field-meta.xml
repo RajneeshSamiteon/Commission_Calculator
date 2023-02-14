@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Order</fullName>
+                <default>false</default>
+                <label>Order</label>
+            </value>
+            <value>
+                <fullName>Sold</fullName>
+                <default>false</default>
+                <label>Sold</label>
+            </value>
+            <value>
+                <fullName>Inquiry/Planning</fullName>
+                <default>false</default>
+                <label>Inquiry/Planning</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Finalized</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Finalized</label>
+            </value>
+            <value>
+                <fullName>Inquiry - Planning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inquiry - Planning</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lost</label>
+            </value>
+            <value>
+                <fullName>On Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>On Order</label>
+            </value>
+            <value>
+                <fullName>Partial Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partial Order</label>
+            </value>
+            <value>
+                <fullName>nquiry - Planning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>nquiry - Planning</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trigger_Date_Time_Field__c</fullName>
+    <description>Used in tasks for sending monthly &quot;My Activities &amp; New Opps Last Month&quot;</description>
+    <externalId>false</externalId>
+    <label>Trigger Date Time Field</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

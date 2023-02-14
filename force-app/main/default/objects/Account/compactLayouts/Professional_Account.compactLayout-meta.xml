@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professional_Account</fullName>
+    <fields>Name</fields>
+    <fields>Account_Category__c</fields>
+    <fields>Industry</fields>
+    <fields>OwnerId</fields>
+    <fields>Phone</fields>
+    <fields>BillingAddress</fields>
+    <label>Professional Account</label>
+</CompactLayout>

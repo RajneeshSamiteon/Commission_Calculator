@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expired_Price_Exceptions</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Vendor__c</columns>
+    <columns>Description_SKU_s__c</columns>
+    <columns>Price_Exception_Reason__c</columns>
+    <columns>Expires__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Expires__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Expired Price Exceptions</label>
+</ListView>

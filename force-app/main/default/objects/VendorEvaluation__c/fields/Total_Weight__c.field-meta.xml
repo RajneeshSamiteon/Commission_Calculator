@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Weight__c</fullName>
+    <externalId>false</externalId>
+    <formula>Weight_Company_Information__c + Weight_Purchasing_Requirement__c + Weight_Partnership_Understanding__c + Weight_Marketing_Requirements__c + Weight_term_and_conditions__c + Weight_vendor_sw_Demostration__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Weight</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

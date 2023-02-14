@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Architects</fullName>
+                <default>false</default>
+                <label>Architects</label>
+            </value>
+            <value>
+                <fullName>Builders</fullName>
+                <default>false</default>
+                <label>Builders</label>
+            </value>
+            <value>
+                <fullName>Commercial Contractors</fullName>
+                <default>false</default>
+                <label>Commercial Contractors</label>
+            </value>
+            <value>
+                <fullName>Competitior</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Dealers</fullName>
+                <default>false</default>
+                <label>Dealers</label>
+            </value>
+            <value>
+                <fullName>Designers</fullName>
+                <default>false</default>
+                <label>Designers</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Facilities Management</fullName>
+                <default>false</default>
+                <label>Facilities Management</label>
+            </value>
+            <value>
+                <fullName>General Contractors</fullName>
+                <default>false</default>
+                <label>General Contractors</label>
+            </value>
+            <value>
+                <fullName>Homeowners</fullName>
+                <default>false</default>
+                <label>Homeowners</label>
+            </value>
+            <value>
+                <fullName>Landscape Architect / Designer</fullName>
+                <default>false</default>
+                <label>Landscape Architect / Designer</label>
+            </value>
+            <value>
+                <fullName>Landscape Contractor</fullName>
+                <default>false</default>
+                <label>Landscape Contractor</label>
+            </value>
+            <value>
+                <fullName>National Account</fullName>
+                <default>false</default>
+                <label>National Account</label>
+            </value>
+            <value>
+                <fullName>Project Owners - Commercial</fullName>
+                <default>false</default>
+                <label>Project Owners - Commercial</label>
+            </value>
+            <value>
+                <fullName>Regional Account</fullName>
+                <default>false</default>
+                <label>Regional Account</label>
+            </value>
+            <value>
+                <fullName>Residential Contractors</fullName>
+                <default>false</default>
+                <label>Residential Contractors</label>
+            </value>
+            <value>
+                <fullName>Residential Designer</fullName>
+                <default>false</default>
+                <label>Residential Designer</label>
+            </value>
+            <value>
+                <fullName>Vendor/Manufacturer</fullName>
+                <default>false</default>
+                <label>Vendor/Manufacturer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

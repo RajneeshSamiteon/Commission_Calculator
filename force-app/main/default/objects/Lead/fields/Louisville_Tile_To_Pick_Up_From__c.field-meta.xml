@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Louisville_Tile_To_Pick_Up_From__c</fullName>
+    <externalId>false</externalId>
+    <label>Louisville Tile To Pick Up From</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Louisville,KY</fullName>
+                <default>false</default>
+                <label>Louisville,KY</label>
+            </value>
+            <value>
+                <fullName>Westport Village (Louisville)</fullName>
+                <default>false</default>
+                <label>Westport Village (Louisville)</label>
+            </value>
+            <value>
+                <fullName>Laxington, KY</fullName>
+                <default>false</default>
+                <label>Laxington, KY</label>
+            </value>
+            <value>
+                <fullName>Nashville, TN</fullName>
+                <default>false</default>
+                <label>Nashville, TN</label>
+            </value>
+            <value>
+                <fullName>Knoxville, TN</fullName>
+                <default>false</default>
+                <label>Knoxville, TN</label>
+            </value>
+            <value>
+                <fullName>Chattanooga, TN</fullName>
+                <default>false</default>
+                <label>Chattanooga, TN</label>
+            </value>
+            <value>
+                <fullName>Johnson City, TN</fullName>
+                <default>false</default>
+                <label>Johnson City, TN</label>
+            </value>
+            <value>
+                <fullName>Indianapolis, IN</fullName>
+                <default>false</default>
+                <label>Indianapolis, IN</label>
+            </value>
+            <value>
+                <fullName>Evansville, IN</fullName>
+                <default>false</default>
+                <label>Evansville, IN</label>
+            </value>
+            <value>
+                <fullName>South Bend, IN</fullName>
+                <default>false</default>
+                <label>South Bend, IN</label>
+            </value>
+            <value>
+                <fullName>Forth Wayne, IN</fullName>
+                <default>false</default>
+                <label>Forth Wayne, IN</label>
+            </value>
+            <value>
+                <fullName>Cincinnati, OH</fullName>
+                <default>false</default>
+                <label>Cincinnati, OH</label>
+            </value>
+            <value>
+                <fullName>Grand Rapids, MI</fullName>
+                <default>false</default>
+                <label>Grand Rapids, MI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

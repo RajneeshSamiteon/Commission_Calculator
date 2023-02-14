@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complaint_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Complaint Reason</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Color</fullName>
+                <default>false</default>
+                <label>Color</label>
+            </value>
+            <value>
+                <fullName>Finish</fullName>
+                <default>false</default>
+                <label>Finish</label>
+            </value>
+            <value>
+                <fullName>Grout Staining</fullName>
+                <default>false</default>
+                <label>Grout Staining</label>
+            </value>
+            <value>
+                <fullName>Installation / Bonding</fullName>
+                <default>false</default>
+                <label>Installation / Bonding</label>
+            </value>
+            <value>
+                <fullName>LTD Warehouse Error</fullName>
+                <default>false</default>
+                <label>LTD Warehouse Error</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Defect</fullName>
+                <default>false</default>
+                <label>Manufacturing Defect</label>
+            </value>
+            <value>
+                <fullName>Size</fullName>
+                <default>false</default>
+                <label>Size</label>
+            </value>
+            <value>
+                <fullName>Vendor Warehouse Error</fullName>
+                <default>false</default>
+                <label>Vendor Warehouse Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

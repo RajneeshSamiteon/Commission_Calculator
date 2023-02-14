@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cost_to_LTD__c</fullName>
+    <externalId>false</externalId>
+    <formula>(LTD_Credit_Amount__c + LTD_Payment_Amount__c)  -  Vendor_Credit_to_LTD__c</formula>
+    <inlineHelpText>Formula calculates (LTD Credit Amount + LTD Check Amount) minus Vendor Credit Amount</inlineHelpText>
+    <label>Total Cost to LTD</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

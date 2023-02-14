@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_D_Team_Expense_Reports</fullName>
+    <columns>NAME</columns>
+    <columns>Employee_Name__c</columns>
+    <columns>Branch__c</columns>
+    <columns>Reason_for_Expense__c</columns>
+    <columns>Total_Amount__c</columns>
+    <columns>Picklist__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>User_Profile__c</field>
+        <operation>equals</operation>
+        <value>Sales Representative - A&amp;D</value>
+    </filters>
+    <label>A&amp;D Team Expense Reports</label>
+    <sharedTo>
+        <role>VP_of_Sales_A_D</role>
+    </sharedTo>
+</ListView>

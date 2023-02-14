@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Case</fullName>
+    <active>true</active>
+    <businessProcess>Internal IT Case</businessProcess>
+    <label>Opportunity Case</label>
+    <picklistValues>
+        <picklist>Branch__c</picklist>
+        <values>
+            <fullName>Chattanooga 035</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincinnati 065</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elk Grove Village 085</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evansville 050</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishers 055</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fort Wayne 070</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Rapids 080</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Johnson CIty 033</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville 037</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexington 060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville 040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville 030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Accounts 039</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bend 075</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Resolution_Category__c</picklist>
+        <values>
+            <fullName>Installation Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville Tile Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selection Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Initial_Complaint_Category__c</picklist>
+        <values>
+            <fullName>Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grout Staining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation %2F Bonding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTD Warehouse Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Warehouse Error</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Area__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network %2F Connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Based Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Sub_Area__c</picklist>
+        <values>
+            <fullName>Apps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dancik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dancik Decor24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dancik RADAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McGraw-Hill %2F Dodge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outlook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outlook sync to Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SF to Outlook sync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shared Folders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thin Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPhone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iTunes %2F iTunes sync</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chatter Answers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

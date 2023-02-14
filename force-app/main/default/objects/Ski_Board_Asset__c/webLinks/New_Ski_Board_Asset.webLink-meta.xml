@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Ski_Board_Asset</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Ski Board Asset</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>https://na1.salesforce.com/a0f/e?CF00N30000006F1M9={!Account.Name}&amp;CF00N30000006F1M9_lkid={!Account.Id}&amp;Name=&quot;SF Will Set&quot;&amp;retURL=/{!Account.Id}&amp;saveURL=/{!Account.Id}</url>
+</WebLink>

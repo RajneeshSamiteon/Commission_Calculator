@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Website_Samples</fullName>
+    <active>true</active>
+    <description>When Sample Request Form is submitted By External Users. This Record Type should be selected.</description>
+    <label>Website Samples</label>
+    <picklistValues>
+        <picklist>Branch_Material_Should_Be_Shipped_To__c</picklist>
+        <values>
+            <fullName>Chattanooga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincinnati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evansville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fort Wayne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Rapids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Johnson City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Port Village</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_Material_Be_Shipped_To_Customer__c</picklist>
+        <values>
+            <fullName>2nd Day Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Day Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Next day Air - This will require Manager approval before we can order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_material_be_ship_to_the_branch__c</picklist>
+        <values>
+            <fullName>Best Way Possible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolidated%2FTransfer Truck</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Like_to_pick_your_sample_up_at_your__c</picklist>
+        <values>
+            <fullName>Louisville Tile Pick Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship To My Home</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Louisville_Tile__c</picklist>
+        <values>
+            <fullName>Chattanooga%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincinnati%2C OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evansville%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fort Wayne%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Rapids%2C MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indianapolis%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Johnson City%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexington%2C KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville%2CKY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bend%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Westport Village %28Louisville%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manufacture_for_sample__c</picklist>
+        <values>
+            <fullName>AMERICAN OLEAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMERICAN UNIVERSAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANATOLIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CROSSVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLORIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WEDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Showroom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sample_Request_Form_Status__c</picklist>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Ordered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Save as Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sample_Type__c</picklist>
+        <values>
+            <fullName>Special Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock Sample</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Select_Branch__c</picklist>
+        <values>
+            <fullName>Chattanooga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincinnati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evansville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fort Wayne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Rapids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Johnson City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Port Village</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ship_to_Louis_tile_branch__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_type_of_project_you_are_working_on__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Where_sample_to_be_shipped__c</picklist>
+        <values>
+            <fullName>Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

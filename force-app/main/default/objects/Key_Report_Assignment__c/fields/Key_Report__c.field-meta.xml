@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Report__c</fullName>
+    <externalId>false</externalId>
+    <label>Key Report</label>
+    <referenceTo>Key_Report__c</referenceTo>
+    <relationshipLabel>Key Report Assignment</relationshipLabel>
+    <relationshipName>Key_Report_Assignment</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

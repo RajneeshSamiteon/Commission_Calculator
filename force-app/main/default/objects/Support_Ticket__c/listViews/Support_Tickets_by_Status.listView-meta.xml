@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Tickets_by_Status</fullName>
+    <columns>NAME</columns>
+    <columns>Issue_Title__c</columns>
+    <columns>Issue_type__c</columns>
+    <columns>Account_url__c</columns>
+    <columns>Status__c</columns>
+    <columns>CR_Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Current_Owner__c</columns>
+    <columns>New_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Resolved,Deployed to Production,Closed</value>
+    </filters>
+    <label>Open Support Tickets by Status</label>
+</ListView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Method__c</fullName>
+    <description>The method by which the sample should be sent.</description>
+    <externalId>false</externalId>
+    <label>Shipping Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LTD Transfer Truck</fullName>
+                <default>false</default>
+                <label>LTD Transfer Truck</label>
+            </value>
+            <value>
+                <fullName>LTL Carrier</fullName>
+                <default>false</default>
+                <label>LTL Carrier</label>
+            </value>
+            <value>
+                <fullName>Pickup at Branch</fullName>
+                <default>false</default>
+                <label>Pickup at Branch</label>
+            </value>
+            <value>
+                <fullName>UPS 2nd Day</fullName>
+                <default>false</default>
+                <label>UPS 2nd Day</label>
+            </value>
+            <value>
+                <fullName>UPS Ground</fullName>
+                <default>false</default>
+                <label>UPS Ground</label>
+            </value>
+            <value>
+                <fullName>UPS Next Day</fullName>
+                <default>false</default>
+                <label>UPS Next Day</label>
+            </value>
+            <value>
+                <fullName>UPS Next Day AM Delivery</fullName>
+                <default>false</default>
+                <label>UPS Next Day AM Delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

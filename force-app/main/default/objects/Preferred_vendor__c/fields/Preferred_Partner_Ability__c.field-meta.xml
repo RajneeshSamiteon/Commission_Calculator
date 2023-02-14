@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Partner_Ability__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please describe Preferred Partner ability to participate in this process and schedule</inlineHelpText>
+    <label>Preferred Partner Ability</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

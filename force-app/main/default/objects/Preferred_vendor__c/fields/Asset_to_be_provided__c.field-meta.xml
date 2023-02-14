@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_to_be_provided__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>whar assetsor resources will you provide to help LT achieve its mission,target goals,and expand its market share</inlineHelpText>
+    <label>Asset to be provided</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

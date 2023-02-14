@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Branch</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central Warehouse 038</fullName>
+                <default>false</default>
+                <label>Central Warehouse 038</label>
+            </value>
+            <value>
+                <fullName>Chattanooga 035</fullName>
+                <default>false</default>
+                <label>Chattanooga 035</label>
+            </value>
+            <value>
+                <fullName>Cincinnati 065</fullName>
+                <default>false</default>
+                <label>Cincinnati 065</label>
+            </value>
+            <value>
+                <fullName>Elk Grove Village 085</fullName>
+                <default>false</default>
+                <label>Elk Grove Village 085</label>
+            </value>
+            <value>
+                <fullName>Evansville 050</fullName>
+                <default>false</default>
+                <label>Evansville 050</label>
+            </value>
+            <value>
+                <fullName>Fishers 055</fullName>
+                <default>false</default>
+                <label>Fishers 055</label>
+            </value>
+            <value>
+                <fullName>Fort Wayne 070</fullName>
+                <default>false</default>
+                <label>Fort Wayne 070</label>
+            </value>
+            <value>
+                <fullName>Grand Rapids 080</fullName>
+                <default>false</default>
+                <label>Grand Rapids 080</label>
+            </value>
+            <value>
+                <fullName>Johnson City 033</fullName>
+                <default>false</default>
+                <label>Johnson City 033</label>
+            </value>
+            <value>
+                <fullName>Knoxville 037</fullName>
+                <default>false</default>
+                <label>Knoxville 037</label>
+            </value>
+            <value>
+                <fullName>Lexington 060</fullName>
+                <default>false</default>
+                <label>Lexington 060</label>
+            </value>
+            <value>
+                <fullName>Louisville 040</fullName>
+                <default>false</default>
+                <label>Louisville 040</label>
+            </value>
+            <value>
+                <fullName>Nashville 030</fullName>
+                <default>false</default>
+                <label>Nashville 030</label>
+            </value>
+            <value>
+                <fullName>National Accounts 039</fullName>
+                <default>false</default>
+                <label>National Accounts 039</label>
+            </value>
+            <value>
+                <fullName>South Bend 075</fullName>
+                <default>false</default>
+                <label>South Bend 075</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

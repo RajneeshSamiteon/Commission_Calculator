@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backorder_Date_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval( Status__c , &quot;Back-ordered&quot;) &amp;&amp; isblank ( Backorder_Date__c )</errorConditionFormula>
+    <errorMessage>Backorder Date required when Status = Backordered</errorMessage>
+</ValidationRule>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What type of contact is this within the company (Account) they work for?</inlineHelpText>
+    <label>Contact Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Admin</fullName>
+                <default>false</default>
+                <label>Admin</label>
+            </value>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>AP/Billing</fullName>
+                <default>false</default>
+                <label>AP/Billing</label>
+            </value>
+            <value>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+                <label>Buyer</label>
+            </value>
+            <value>
+                <fullName>Customer Servicer</fullName>
+                <default>false</default>
+                <label>Customer Servicer</label>
+            </value>
+            <value>
+                <fullName>Designer</fullName>
+                <default>false</default>
+                <label>Designer</label>
+            </value>
+            <value>
+                <fullName>Estimator</fullName>
+                <default>false</default>
+                <label>Estimator</label>
+            </value>
+            <value>
+                <fullName>Facilities Manager</fullName>
+                <default>false</default>
+                <label>Facilities Manager</label>
+            </value>
+            <value>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+                <label>General Contractor</label>
+            </value>
+            <value>
+                <fullName>Installer</fullName>
+                <default>false</default>
+                <label>Installer</label>
+            </value>
+            <value>
+                <fullName>Intern</fullName>
+                <default>false</default>
+                <label>Intern</label>
+            </value>
+            <value>
+                <fullName>Inventory Control</fullName>
+                <default>false</default>
+                <label>Inventory Control</label>
+            </value>
+            <value>
+                <fullName>Landscape Architect</fullName>
+                <default>false</default>
+                <label>Landscape Architect</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Owner/Operator</fullName>
+                <default>false</default>
+                <label>Owner/Operator</label>
+            </value>
+            <value>
+                <fullName>Principal</fullName>
+                <default>false</default>
+                <label>Principal</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Resource Library Manager</fullName>
+                <default>false</default>
+                <label>Resource Library Manager</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Showroom Manager</fullName>
+                <default>false</default>
+                <label>Showroom Manager</label>
+            </value>
+            <value>
+                <fullName>Specifier</fullName>
+                <default>false</default>
+                <label>Specifier</label>
+            </value>
+            <value>
+                <fullName>Spec Writer</fullName>
+                <default>false</default>
+                <label>Spec Writer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Out_of_Territory_Email_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used with &quot;Opportunity - Project Out of Territory&quot; workflow</description>
+    <externalId>false</externalId>
+    <label>Project Out of Territory Email Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Packaging_and_handling_fees__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe your packaging and handling fees and parameters</inlineHelpText>
+    <label>Packaging and handling fees</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

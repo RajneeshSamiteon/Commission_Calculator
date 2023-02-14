@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Valuation_Range__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the valuation range for the project.  You should also estimate an amount and enter it in the Amount field on the Opportunity.</inlineHelpText>
+    <label>Project Valuation Range</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under $1000</fullName>
+                <default>false</default>
+                <label>Under $1000</label>
+            </value>
+            <value>
+                <fullName>$1000 - $4999</fullName>
+                <default>false</default>
+                <label>$1000 - $4999</label>
+            </value>
+            <value>
+                <fullName>$5000 - $9999</fullName>
+                <default>false</default>
+                <label>$5000 - $9999</label>
+            </value>
+            <value>
+                <fullName>$10,000 - $20,000</fullName>
+                <default>false</default>
+                <label>$10,000 - $20,000</label>
+            </value>
+            <value>
+                <fullName>$20,000 - $34,999</fullName>
+                <default>false</default>
+                <label>$20,000 - $34,999</label>
+            </value>
+            <value>
+                <fullName>$35,000 - $49,999</fullName>
+                <default>false</default>
+                <label>$35,000 - $49,999</label>
+            </value>
+            <value>
+                <fullName>$50,000 - $74,999</fullName>
+                <default>false</default>
+                <label>$50,000 - $74,999</label>
+            </value>
+            <value>
+                <fullName>$75,000 - $99,999</fullName>
+                <default>false</default>
+                <label>$75,000 - $99,999</label>
+            </value>
+            <value>
+                <fullName>$100,000 - $149,999</fullName>
+                <default>false</default>
+                <label>$100,000 - $149,999</label>
+            </value>
+            <value>
+                <fullName>$150,000 - $200,000</fullName>
+                <default>false</default>
+                <label>$150,000 - $200,000</label>
+            </value>
+            <value>
+                <fullName>Over $200,000</fullName>
+                <default>false</default>
+                <label>Over $200,000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

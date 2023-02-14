@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_applied_to_vendor_marketing_fund__c</fullName>
+    <externalId>false</externalId>
+    <label>Total applied to vendor marketing fund</label>
+    <summarizedField>Expense_Line_Item__c.Marketing_Fund_Allocation__c</summarizedField>
+    <summaryFilterItems>
+        <field>Expense_Line_Item__c.To_be_applied_to_vendor_marketing_fund__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Expense_Line_Item__c.Expense_Report__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>itemAndProduct__c</fullName>
+    <externalId>false</externalId>
+    <formula>Selection_Sheet_ID__c +&apos;-&apos;+  SS_Line_Number__c + &apos;-&apos;+ Product_name__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>itemAndProduct</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

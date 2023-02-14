@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_Underlayment_Do_You_Sell__c</fullName>
+    <description>Field label changed per KF 1/19/2011</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select one or more options from the picklist.</inlineHelpText>
+    <label>What Underlayment Do You Sell?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Big Box Store</fullName>
+                <default>false</default>
+                <label>Big Box Store</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>Dal</fullName>
+                <default>false</default>
+                <label>Dal</label>
+            </value>
+            <value>
+                <fullName>HB</fullName>
+                <default>false</default>
+                <label>HB</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Permabase</fullName>
+                <default>false</default>
+                <label>Permabase</label>
+            </value>
+            <value>
+                <fullName>Pro-Tec</fullName>
+                <default>false</default>
+                <label>Pro-Tec</label>
+            </value>
+            <value>
+                <fullName>Schluter</fullName>
+                <default>false</default>
+                <label>Schluter</label>
+            </value>
+            <value>
+                <fullName>USG</fullName>
+                <default>false</default>
+                <label>USG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

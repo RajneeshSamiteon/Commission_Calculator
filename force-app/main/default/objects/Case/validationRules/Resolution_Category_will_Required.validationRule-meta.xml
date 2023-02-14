@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Category_will_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND 
+(ISPICKVAL(Status, &apos;Closed&apos;), ISPICKVAL( Case_Resolution_Category__c , &apos;&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Case_Resolution_Category__c</errorDisplayField>
+    <errorMessage>Please complete Select Case Resolution Category</errorMessage>
+</ValidationRule>

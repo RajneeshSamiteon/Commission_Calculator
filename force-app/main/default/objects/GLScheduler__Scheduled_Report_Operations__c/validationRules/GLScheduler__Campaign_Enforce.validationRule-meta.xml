@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLScheduler__Campaign_Enforce</fullName>
+    <active>false</active>
+    <errorConditionFormula>isblank( GLScheduler__Campaign__c )
+&amp;&amp;
+CONTAINS( RecordType.Name,&quot;Campaign&quot; )</errorConditionFormula>
+    <errorDisplayField>GLScheduler__Campaign__c</errorDisplayField>
+    <errorMessage>Please enter a campaign</errorMessage>
+</ValidationRule>

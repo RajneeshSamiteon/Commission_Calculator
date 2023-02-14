@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Series__c</fullName>
+    <externalId>false</externalId>
+    <label>Series</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Vendor__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allora</fullName>
+                <default>false</default>
+                <label>Allora</label>
+            </value>
+            <value>
+                <fullName>Amber Valley</fullName>
+                <default>false</default>
+                <label>Amber Valley</label>
+            </value>
+            <value>
+                <fullName>Americana</fullName>
+                <default>false</default>
+                <label>Americana</label>
+            </value>
+            <value>
+                <fullName>American Classic</fullName>
+                <default>false</default>
+                <label>American Classic</label>
+            </value>
+            <value>
+                <fullName>Amiata</fullName>
+                <default>false</default>
+                <label>Amiata</label>
+            </value>
+            <value>
+                <fullName>Avenue One</fullName>
+                <default>false</default>
+                <label>Avenue One</label>
+            </value>
+            <value>
+                <fullName>Avila</fullName>
+                <default>false</default>
+                <label>Avila</label>
+            </value>
+            <value>
+                <fullName>Bright &amp; Matte Group 1</fullName>
+                <default>false</default>
+                <label>Bright &amp; Matte Group 1</label>
+            </value>
+            <value>
+                <fullName>Bright &amp; Matte Group 2-5</fullName>
+                <default>false</default>
+                <label>Bright &amp; Matte Group 2-5</label>
+            </value>
+            <value>
+                <fullName>Bright &amp; Matte Profiles</fullName>
+                <default>false</default>
+                <label>Bright &amp; Matte Profiles</label>
+            </value>
+            <value>
+                <fullName>Brillante Glass Liner Bars</fullName>
+                <default>false</default>
+                <label>Brillante Glass Liner Bars</label>
+            </value>
+            <value>
+                <fullName>Buenos Aires Mood Polished</fullName>
+                <default>false</default>
+                <label>Buenos Aires Mood Polished</label>
+            </value>
+            <value>
+                <fullName>Buenos Aires Mood Textured</fullName>
+                <default>false</default>
+                <label>Buenos Aires Mood Textured</label>
+            </value>
+            <value>
+                <fullName>Buenos Aires Mood Unpolished</fullName>
+                <default>false</default>
+                <label>Buenos Aires Mood Unpolished</label>
+            </value>
+            <value>
+                <fullName>Carriage House</fullName>
+                <default>false</default>
+                <label>Carriage House</label>
+            </value>
+            <value>
+                <fullName>Ceramic Mosaics Grp 1,2,3, &amp; 4</fullName>
+                <default>false</default>
+                <label>Ceramic Mosaics Grp 1,2,3, &amp; 4</label>
+            </value>
+            <value>
+                <fullName>Ceramic Mosaics Grp 1 &amp; 2</fullName>
+                <default>false</default>
+                <label>Ceramic Mosaics Grp 1 &amp; 2</label>
+            </value>
+            <value>
+                <fullName>Color Blox</fullName>
+                <default>false</default>
+                <label>Color Blox</label>
+            </value>
+            <value>
+                <fullName>Color Blox Mosaics Bd 1</fullName>
+                <default>false</default>
+                <label>Color Blox Mosaics Bd 1</label>
+            </value>
+            <value>
+                <fullName>Color Blox Mosaics Bd 2</fullName>
+                <default>false</default>
+                <label>Color Blox Mosaics Bd 2</label>
+            </value>
+            <value>
+                <fullName>Color Blox Mosaics Bd 3</fullName>
+                <default>false</default>
+                <label>Color Blox Mosaics Bd 3</label>
+            </value>
+            <value>
+                <fullName>Color Blox Too</fullName>
+                <default>false</default>
+                <label>Color Blox Too</label>
+            </value>
+            <value>
+                <fullName>Costa Rei</fullName>
+                <default>false</default>
+                <label>Costa Rei</label>
+            </value>
+            <value>
+                <fullName>Costa Rei Mosaics</fullName>
+                <default>false</default>
+                <label>Costa Rei Mosaics</label>
+            </value>
+            <value>
+                <fullName>Cotto Americana</fullName>
+                <default>false</default>
+                <label>Cotto Americana</label>
+            </value>
+            <value>
+                <fullName>Cross Colors Mingle Bd 1</fullName>
+                <default>false</default>
+                <label>Cross Colors Mingle Bd 1</label>
+            </value>
+            <value>
+                <fullName>Cross Colors Mingle Bd 2</fullName>
+                <default>false</default>
+                <label>Cross Colors Mingle Bd 2</label>
+            </value>
+            <value>
+                <fullName>Cross Colors Solid Bd 1</fullName>
+                <default>false</default>
+                <label>Cross Colors Solid Bd 1</label>
+            </value>
+            <value>
+                <fullName>Cross Colors Solid Bd 2</fullName>
+                <default>false</default>
+                <label>Cross Colors Solid Bd 2</label>
+            </value>
+            <value>
+                <fullName>Ecocycle</fullName>
+                <default>false</default>
+                <label>Ecocycle</label>
+            </value>
+            <value>
+                <fullName>Empire Polished</fullName>
+                <default>false</default>
+                <label>Empire Polished</label>
+            </value>
+            <value>
+                <fullName>Empire Unpolished</fullName>
+                <default>false</default>
+                <label>Empire Unpolished</label>
+            </value>
+            <value>
+                <fullName>Hennessey Place</fullName>
+                <default>false</default>
+                <label>Hennessey Place</label>
+            </value>
+            <value>
+                <fullName>Highland Ridge</fullName>
+                <default>false</default>
+                <label>Highland Ridge</label>
+            </value>
+            <value>
+                <fullName>Legacy Glass</fullName>
+                <default>false</default>
+                <label>Legacy Glass</label>
+            </value>
+            <value>
+                <fullName>Linea</fullName>
+                <default>false</default>
+                <label>Linea</label>
+            </value>
+            <value>
+                <fullName>Lyndhurst</fullName>
+                <default>false</default>
+                <label>Lyndhurst</label>
+            </value>
+            <value>
+                <fullName>Natural Slate</fullName>
+                <default>false</default>
+                <label>Natural Slate</label>
+            </value>
+            <value>
+                <fullName>Nouveau</fullName>
+                <default>false</default>
+                <label>Nouveau</label>
+            </value>
+            <value>
+                <fullName>Park Avenue</fullName>
+                <default>false</default>
+                <label>Park Avenue</label>
+            </value>
+            <value>
+                <fullName>Pietra de Serre</fullName>
+                <default>false</default>
+                <label>Pietra de Serre</label>
+            </value>
+            <value>
+                <fullName>Plan</fullName>
+                <default>false</default>
+                <label>Plan</label>
+            </value>
+            <value>
+                <fullName>Porte Leona</fullName>
+                <default>false</default>
+                <label>Porte Leona</label>
+            </value>
+            <value>
+                <fullName>Quarry Naturals</fullName>
+                <default>false</default>
+                <label>Quarry Naturals</label>
+            </value>
+            <value>
+                <fullName>Quarry Tile</fullName>
+                <default>false</default>
+                <label>Quarry Tile</label>
+            </value>
+            <value>
+                <fullName>Quartez</fullName>
+                <default>false</default>
+                <label>Quartez</label>
+            </value>
+            <value>
+                <fullName>San Martino</fullName>
+                <default>false</default>
+                <label>San Martino</label>
+            </value>
+            <value>
+                <fullName>Ultimetal</fullName>
+                <default>false</default>
+                <label>Ultimetal</label>
+            </value>
+            <value>
+                <fullName>Ultratech</fullName>
+                <default>false</default>
+                <label>Ultratech</label>
+            </value>
+            <value>
+                <fullName>Urban Canvas</fullName>
+                <default>false</default>
+                <label>Urban Canvas</label>
+            </value>
+            <value>
+                <fullName>Vallano</fullName>
+                <default>false</default>
+                <label>Vallano</label>
+            </value>
+            <value>
+                <fullName>Vista Americana</fullName>
+                <default>false</default>
+                <label>Vista Americana</label>
+            </value>
+            <value>
+                <fullName>Wood Impressions</fullName>
+                <default>false</default>
+                <label>Wood Impressions</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Allora</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Amber Valley</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Amiata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Avenue One</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Avila</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Bright &amp; Matte Group 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Bright &amp; Matte Group 2-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Bright &amp; Matte Profiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Carriage House</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Ceramic Mosaics Grp 1,2,3, &amp; 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Ceramic Mosaics Grp 1 &amp; 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Costa Rei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Costa Rei Mosaics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Hennessey Place</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Highland Ridge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Legacy Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Linea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Lyndhurst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Natural Slate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Nouveau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Park Avenue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Pietra de Serre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Porte Leona</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Quarry Naturals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Quarry Tile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>San Martino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Ultratech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Urban Canvas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Vallano</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Americana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>American Classic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Brillante Glass Liner Bars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Buenos Aires Mood Polished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Buenos Aires Mood Textured</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Buenos Aires Mood Unpolished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Color Blox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Color Blox Mosaics Bd 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Color Blox Mosaics Bd 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Color Blox Mosaics Bd 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Color Blox Too</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Cotto Americana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Cross Colors Mingle Bd 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Cross Colors Mingle Bd 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Cross Colors Solid Bd 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Cross Colors Solid Bd 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Ecocycle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Empire Polished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Empire Unpolished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Ultimetal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Vista Americana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Wood Impressions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>Quartez</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

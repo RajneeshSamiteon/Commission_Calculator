@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Issue_Title__c</columns>
+    <columns>Issue_type__c</columns>
+    <columns>Status__c</columns>
+    <columns>CR_Status__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Support_Ticket__c.Change_Request_Enhancement</value>
+    </filters>
+    <filters>
+        <field>CR_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Deployed</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Resolved,Deployed to Production,Closed</value>
+    </filters>
+    <label>Change Requests in Progress</label>
+</ListView>

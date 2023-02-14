@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adherence_to_Distribution_Agreement_S_w__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Spreadsheet follow format required by our IT and Items departments for uploading with merchandising and packaging information included(1-5)</inlineHelpText>
+    <label>Adherence to Distribution Agreement S/w</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

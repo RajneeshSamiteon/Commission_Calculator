@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_distribution_rights__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Confirmation of full distribution rights in all states LT currently operating in</inlineHelpText>
+    <label>Full distribution rights</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

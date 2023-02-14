@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Date_Sent__c</columns>
+    <columns>NAME</columns>
+    <columns>Campaign__c</columns>
+    <columns>Number_Delivered__c</columns>
+    <columns>Open_Rate__c</columns>
+    <columns>Unsubscribe_Rate__c</columns>
+    <columns>Bounce_Rate__c</columns>
+    <columns>Number_Bounced__c</columns>
+    <columns>Number_of_Hard_Bounces__c</columns>
+    <columns>Number_of_Soft_Bounces__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

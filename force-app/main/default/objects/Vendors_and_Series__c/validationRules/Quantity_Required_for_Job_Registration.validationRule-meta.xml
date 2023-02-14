@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_Required_for_Job_Registration</fullName>
+    <active>true</active>
+    <description>If Job Registration Needed is checked the Quantity field must be populated</description>
+    <errorConditionFormula>Job_Registration_Needed__c &amp;&amp; ISBLANK(Quantity__c)</errorConditionFormula>
+    <errorDisplayField>Quantity__c</errorDisplayField>
+    <errorMessage>Quantity is required when Job Registration is needed</errorMessage>
+</ValidationRule>

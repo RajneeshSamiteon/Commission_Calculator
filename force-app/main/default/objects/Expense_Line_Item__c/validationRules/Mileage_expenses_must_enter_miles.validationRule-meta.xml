@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mileage_expenses_must_enter_miles</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(ispickval( Expense_Type__c , &quot;Mileage GL50040&quot;), or( Miles__c =0,isblank(Miles__c)))</errorConditionFormula>
+    <errorMessage>For mileage expenses, you must enter number of miles</errorMessage>
+</ValidationRule>

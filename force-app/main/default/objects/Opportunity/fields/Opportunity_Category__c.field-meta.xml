@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Mixed Use</fullName>
+                <default>false</default>
+                <label>Mixed Use</label>
+            </value>
+            <value>
+                <fullName>Multi-Family</fullName>
+                <default>false</default>
+                <label>Multi-Family</label>
+            </value>
+            <value>
+                <fullName>Recreational</fullName>
+                <default>false</default>
+                <label>Recreational</label>
+            </value>
+            <value>
+                <fullName>Religious</fullName>
+                <default>false</default>
+                <label>Religious</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Single-Family</fullName>
+                <default>false</default>
+                <label>Single-Family</label>
+            </value>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>LTD Cross Territory</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LTD Cross Territory</label>
+            </value>
+            <value>
+                <fullName>National Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Account</label>
+            </value>
+            <value>
+                <fullName>Opportunity Buy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Opportunity Buy</label>
+            </value>
+            <value>
+                <fullName>Out of Territory</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Out of Territory</label>
+            </value>
+            <value>
+                <fullName>Residential - New Construction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Residential - New Construction</label>
+            </value>
+            <value>
+                <fullName>Residential - Remodel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Residential - Remodel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

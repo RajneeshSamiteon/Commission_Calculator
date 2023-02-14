@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Approve_List</fullName>
+    <columns>NAME</columns>
+    <columns>Legal_Company_Name__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Application_Status__c</columns>
+    <columns>Annual_Sales__c</columns>
+    <columns>Primary_Contact_Credit_Limit_Requested__c</columns>
+    <columns>Recommended_Credit_Limit__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Application_Status__c</field>
+        <operation>equals</operation>
+        <value>In Review</value>
+    </filters>
+    <label>All forms in Review</label>
+</ListView>

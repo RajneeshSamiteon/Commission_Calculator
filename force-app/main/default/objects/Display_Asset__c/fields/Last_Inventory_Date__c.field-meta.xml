@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Inventory_Date__c</fullName>
+    <description>Date display was last checked for discontinued items, new intros, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date display was last checked for discontinued items, new intros, etc.</inlineHelpText>
+    <label>Last Inventory Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

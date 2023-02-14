@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Online_Capabilities__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe your online capabilities to LT for reporting, payments, inventory, customer order tracking and status, freight, sales performance to track rebate status, and other critical elements</inlineHelpText>
+    <label>Online Capabilities</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

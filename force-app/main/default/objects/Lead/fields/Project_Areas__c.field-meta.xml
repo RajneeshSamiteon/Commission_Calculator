@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Areas__c</fullName>
+    <externalId>false</externalId>
+    <label>Project Areas</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bathroom Floor</fullName>
+                <default>false</default>
+                <label>Bathroom Floor</label>
+            </value>
+            <value>
+                <fullName>Shower Floor</fullName>
+                <default>false</default>
+                <label>Shower Floor</label>
+            </value>
+            <value>
+                <fullName>Shower Wall</fullName>
+                <default>false</default>
+                <label>Shower Wall</label>
+            </value>
+            <value>
+                <fullName>Tub Splash/Deck</fullName>
+                <default>false</default>
+                <label>Tub Splash/Deck</label>
+            </value>
+            <value>
+                <fullName>Vanity Wall</fullName>
+                <default>false</default>
+                <label>Vanity Wall</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Registration_Needed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether or not this series requires a job registration</description>
+    <externalId>false</externalId>
+    <label>Job Registration Needed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

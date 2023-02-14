@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dealer%2FBuilder Sales Process</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Client Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Inactive</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Design %26 Planning</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>LT Specified-Is Won</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

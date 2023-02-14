@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Order_Stage_Requires_Order_Numbers</fullName>
+    <active>false</active>
+    <description>When an opportunities stage is &quot;On Order&quot; the relevant order numbers from Dancik must be included.</description>
+    <errorConditionFormula>AND (ISPICKVAL( Project_Type__c, &quot;LTD Cross Territory&quot;),  
+(  OR (     ISPICKVAL(StageName, &quot;On Order&quot;),     ISPICKVAL(StageName, &quot;Sold&quot;),ISPICKVAL(StageName, &quot;Sold &amp; Commissioned&quot;))),ISBLANK( Dancik_Order_Numbers__c ))</errorConditionFormula>
+    <errorDisplayField>Dancik_Order_Numbers__c</errorDisplayField>
+    <errorMessage>When Project TYpe = LTD Cross Territory and an opportunities stage is &quot;On Order&quot; or &quot;Sold&quot; or &quot;Sold &amp; Commissioned&quot; the relevant order numbers from Dancik must be included.</errorMessage>
+</ValidationRule>

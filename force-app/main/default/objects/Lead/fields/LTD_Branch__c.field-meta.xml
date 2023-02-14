@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTD_Branch__c</fullName>
+    <description>Converts location address as entered in Acuity calendars into LTD Branch.</description>
+    <externalId>false</externalId>
+    <formula>IF ( CONTAINS ( LTD_Location__c , &apos;10301 Yellow Pine Ln.&apos;) , &apos;Knoxville 037&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;1201 Herr Ln. Suite 160 | Louisville, KY 40222&apos;) , &apos;Louisville 040&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;1417 North Cullen Ave.&apos;) , &apos;Evansville 050&apos;,
+IF ( CONTAINS ( LTD_Location__c , &quot;1426 Director&apos;s Row&quot;) , &apos;Fort Wayne 070&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;1525 Gezon Pkwy&apos;) , &apos;Grand Rapids 080&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;2495 Palumbo Dr.&apos;) , &apos;Lexington 060&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;2525 N Foundation Dr.&apos;) , &apos;South Bend 075&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;3200 E. Kemper Rd.&apos;) , &apos;Cincinnati 065&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;4520 Bishop Lane&apos;) , &apos;Louisville 040&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;4615 Resource Dr.&apos;) , &apos;Chattanooga 035&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;650 Melrose Ave. Nashville, TN&apos;) , &apos;Nashville 030&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;870 Boones Station Rd.&apos;) , &apos;Johnson City 033&apos;,
+IF ( CONTAINS ( LTD_Location__c , &apos;9906 North by Northeast Blvd.&apos;) , &apos;Fishers 055&apos;,
+&apos;&apos;
+)))))))))))))</formula>
+    <inlineHelpText>Converts location address as entered in Acuity calendars into LTD Branch.
+
+Primary Branch is replace by LTD branch</inlineHelpText>
+    <label>LTD Branch</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

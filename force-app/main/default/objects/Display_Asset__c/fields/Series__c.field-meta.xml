@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Series__c</fullName>
+    <externalId>false</externalId>
+    <label>Series</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Vendor__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>12x24 BAM Waterfall</fullName>
+                <default>false</default>
+                <label>12x24 BAM Waterfall</label>
+            </value>
+            <value>
+                <fullName>12x24 Blue Waterfall</fullName>
+                <default>false</default>
+                <label>12x24 Blue Waterfall</label>
+            </value>
+            <value>
+                <fullName>12x24 Loose</fullName>
+                <default>false</default>
+                <label>12x24 Loose</label>
+            </value>
+            <value>
+                <fullName>12x24 Now Waterfall</fullName>
+                <default>false</default>
+                <label>12x24 Now Waterfall</label>
+            </value>
+            <value>
+                <fullName>12x24 Shades Watefall</fullName>
+                <default>false</default>
+                <label>12x24 Shades Watefall</label>
+            </value>
+            <value>
+                <fullName>12x24 Structure Waterfall</fullName>
+                <default>false</default>
+                <label>12x24 Structure Waterfall</label>
+            </value>
+            <value>
+                <fullName>Adena</fullName>
+                <default>false</default>
+                <label>Adena</label>
+            </value>
+            <value>
+                <fullName>Advantage</fullName>
+                <default>false</default>
+                <label>Advantage</label>
+            </value>
+            <value>
+                <fullName>AO Boards</fullName>
+                <default>false</default>
+                <label>AO Boards</label>
+            </value>
+            <value>
+                <fullName>AO Library</fullName>
+                <default>false</default>
+                <label>AO Library</label>
+            </value>
+            <value>
+                <fullName>AO Plank Spinner Display</fullName>
+                <default>false</default>
+                <label>AO Plank Spinner Display</label>
+            </value>
+            <value>
+                <fullName>At Home</fullName>
+                <default>false</default>
+                <label>At Home</label>
+            </value>
+            <value>
+                <fullName>Bella Via Stone</fullName>
+                <default>false</default>
+                <label>Bella Via Stone</label>
+            </value>
+            <value>
+                <fullName>Boards</fullName>
+                <default>false</default>
+                <label>Boards</label>
+            </value>
+            <value>
+                <fullName>Bordeaux Cradle</fullName>
+                <default>false</default>
+                <label>Bordeaux Cradle</label>
+            </value>
+            <value>
+                <fullName>BPI</fullName>
+                <default>false</default>
+                <label>BPI</label>
+            </value>
+            <value>
+                <fullName>Brandon</fullName>
+                <default>false</default>
+                <label>Brandon</label>
+            </value>
+            <value>
+                <fullName>CDC</fullName>
+                <default>false</default>
+                <label>CDC</label>
+            </value>
+            <value>
+                <fullName>Charleston Cradle</fullName>
+                <default>false</default>
+                <label>Charleston Cradle</label>
+            </value>
+            <value>
+                <fullName>Chip Chest</fullName>
+                <default>false</default>
+                <label>Chip Chest</label>
+            </value>
+            <value>
+                <fullName>CMH</fullName>
+                <default>false</default>
+                <label>CMH</label>
+            </value>
+            <value>
+                <fullName>CR Design Center</fullName>
+                <default>false</default>
+                <label>CR Design Center</label>
+            </value>
+            <value>
+                <fullName>Dal Tile</fullName>
+                <default>false</default>
+                <label>Dal Tile</label>
+            </value>
+            <value>
+                <fullName>Danya Cradle</fullName>
+                <default>false</default>
+                <label>Danya Cradle</label>
+            </value>
+            <value>
+                <fullName>Design Center</fullName>
+                <default>false</default>
+                <label>Design Center</label>
+            </value>
+            <value>
+                <fullName>Easywood</fullName>
+                <default>false</default>
+                <label>Easywood</label>
+            </value>
+            <value>
+                <fullName>Ecowood Culla</fullName>
+                <default>false</default>
+                <label>Ecowood Culla</label>
+            </value>
+            <value>
+                <fullName>Elevation</fullName>
+                <default>false</default>
+                <label>Elevation</label>
+            </value>
+            <value>
+                <fullName>Emser</fullName>
+                <default>false</default>
+                <label>Emser</label>
+            </value>
+            <value>
+                <fullName>Entourage</fullName>
+                <default>false</default>
+                <label>Entourage</label>
+            </value>
+            <value>
+                <fullName>Finishing Touches</fullName>
+                <default>false</default>
+                <label>Finishing Touches</label>
+            </value>
+            <value>
+                <fullName>Florida Tile SSC</fullName>
+                <default>false</default>
+                <label>Florida Tile SSC</label>
+            </value>
+            <value>
+                <fullName>FLT 42</fullName>
+                <default>false</default>
+                <label>FLT 42</label>
+            </value>
+            <value>
+                <fullName>FLT 60</fullName>
+                <default>false</default>
+                <label>FLT 60</label>
+            </value>
+            <value>
+                <fullName>FLT Old</fullName>
+                <default>false</default>
+                <label>FLT Old</label>
+            </value>
+            <value>
+                <fullName>Forum Stone</fullName>
+                <default>false</default>
+                <label>Forum Stone</label>
+            </value>
+            <value>
+                <fullName>Guilford</fullName>
+                <default>false</default>
+                <label>Guilford</label>
+            </value>
+            <value>
+                <fullName>Haines</fullName>
+                <default>false</default>
+                <label>Haines</label>
+            </value>
+            <value>
+                <fullName>Iced Rocks</fullName>
+                <default>false</default>
+                <label>Iced Rocks</label>
+            </value>
+            <value>
+                <fullName>Ilva</fullName>
+                <default>false</default>
+                <label>Ilva</label>
+            </value>
+            <value>
+                <fullName>Ladder</fullName>
+                <default>false</default>
+                <label>Ladder</label>
+            </value>
+            <value>
+                <fullName>Laminam</fullName>
+                <default>false</default>
+                <label>Laminam</label>
+            </value>
+            <value>
+                <fullName>Legend</fullName>
+                <default>false</default>
+                <label>Legend</label>
+            </value>
+            <value>
+                <fullName>Listello</fullName>
+                <default>false</default>
+                <label>Listello</label>
+            </value>
+            <value>
+                <fullName>Loose Tile Display</fullName>
+                <default>false</default>
+                <label>Loose Tile Display</label>
+            </value>
+            <value>
+                <fullName>Loose Tile Samples</fullName>
+                <default>false</default>
+                <label>Loose Tile Samples</label>
+            </value>
+            <value>
+                <fullName>Mannington</fullName>
+                <default>false</default>
+                <label>Mannington</label>
+            </value>
+            <value>
+                <fullName>Mansion Cradle</fullName>
+                <default>false</default>
+                <label>Mansion Cradle</label>
+            </value>
+            <value>
+                <fullName>Marca Corona Terra</fullName>
+                <default>false</default>
+                <label>Marca Corona Terra</label>
+            </value>
+            <value>
+                <fullName>Miles</fullName>
+                <default>false</default>
+                <label>Miles</label>
+            </value>
+            <value>
+                <fullName>Mirasol Cradle</fullName>
+                <default>false</default>
+                <label>Mirasol Cradle</label>
+            </value>
+            <value>
+                <fullName>Modern Mythology Card Box</fullName>
+                <default>false</default>
+                <label>Modern Mythology Card Box</label>
+            </value>
+            <value>
+                <fullName>Mohawk</fullName>
+                <default>false</default>
+                <label>Mohawk</label>
+            </value>
+            <value>
+                <fullName>New York Cradle</fullName>
+                <default>false</default>
+                <label>New York Cradle</label>
+            </value>
+            <value>
+                <fullName>OVF</fullName>
+                <default>false</default>
+                <label>OVF</label>
+            </value>
+            <value>
+                <fullName>PDR Samples</fullName>
+                <default>false</default>
+                <label>PDR Samples</label>
+            </value>
+            <value>
+                <fullName>PDR Spinner</fullName>
+                <default>false</default>
+                <label>PDR Spinner</label>
+            </value>
+            <value>
+                <fullName>Plantation</fullName>
+                <default>false</default>
+                <label>Plantation</label>
+            </value>
+            <value>
+                <fullName>PSS Rack A</fullName>
+                <default>false</default>
+                <label>PSS Rack A</label>
+            </value>
+            <value>
+                <fullName>PSS Rack B</fullName>
+                <default>false</default>
+                <label>PSS Rack B</label>
+            </value>
+            <value>
+                <fullName>PSS Rack C</fullName>
+                <default>false</default>
+                <label>PSS Rack C</label>
+            </value>
+            <value>
+                <fullName>Sequoyah Cradle</fullName>
+                <default>false</default>
+                <label>Sequoyah Cradle</label>
+            </value>
+            <value>
+                <fullName>Shaw</fullName>
+                <default>false</default>
+                <label>Shaw</label>
+            </value>
+            <value>
+                <fullName>Space</fullName>
+                <default>false</default>
+                <label>Space</label>
+            </value>
+            <value>
+                <fullName>Speakeasy Waterfall</fullName>
+                <default>false</default>
+                <label>Speakeasy Waterfall</label>
+            </value>
+            <value>
+                <fullName>Spec Saver</fullName>
+                <default>false</default>
+                <label>Spec Saver</label>
+            </value>
+            <value>
+                <fullName>Stair Step</fullName>
+                <default>false</default>
+                <label>Stair Step</label>
+            </value>
+            <value>
+                <fullName>Stone Fire</fullName>
+                <default>false</default>
+                <label>Stone Fire</label>
+            </value>
+            <value>
+                <fullName>Stonepeak</fullName>
+                <default>false</default>
+                <label>Stonepeak</label>
+            </value>
+            <value>
+                <fullName>Sustainable Chip Box</fullName>
+                <default>false</default>
+                <label>Sustainable Chip Box</label>
+            </value>
+            <value>
+                <fullName>Touch Boards</fullName>
+                <default>false</default>
+                <label>Touch Boards</label>
+            </value>
+            <value>
+                <fullName>Tri State</fullName>
+                <default>false</default>
+                <label>Tri State</label>
+            </value>
+            <value>
+                <fullName>Value Wing</fullName>
+                <default>false</default>
+                <label>Value Wing</label>
+            </value>
+            <value>
+                <fullName>Vingnettes</fullName>
+                <default>false</default>
+                <label>Vingnettes</label>
+            </value>
+            <value>
+                <fullName>Vitality Cradle</fullName>
+                <default>false</default>
+                <label>Vitality Cradle</label>
+            </value>
+            <value>
+                <fullName>Waterfall</fullName>
+                <default>false</default>
+                <label>Waterfall</label>
+            </value>
+            <value>
+                <fullName>Winco</fullName>
+                <default>false</default>
+                <label>Winco</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>BPI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Brandon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>CDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>CMH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Dal Tile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Emser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Florida Tile SSC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Guilford</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Haines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Ilva</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Mannington</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Miles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Mohawk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>OVF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Shaw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Stonepeak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Tri State</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Winco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marca Corona</controllingFieldValue>
+            <valueName>Easywood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marca Corona</controllingFieldValue>
+            <valueName>Marca Corona Terra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jeffrey Court</controllingFieldValue>
+            <valueName>Touch Boards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Questech</controllingFieldValue>
+            <valueName>Ladder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Charleston Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Ecowood Culla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Iced Rocks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Mansion Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Plantation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Sequoyah Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florim</controllingFieldValue>
+            <valueName>Stone Fire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>12x24 Loose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>Adena</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>Loose Tile Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>Loose Tile Samples</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>PDR Samples</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>PDR Spinner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisville Tile</controllingFieldValue>
+            <valueName>Vingnettes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E&amp;S</controllingFieldValue>
+            <controllingFieldValue>Orchid</controllingFieldValue>
+            <valueName>Boards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mediterranea</controllingFieldValue>
+            <valueName>New York Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oceanside</controllingFieldValue>
+            <valueName>Waterfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Orchid</controllingFieldValue>
+            <valueName>Value Wing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Panaria</controllingFieldValue>
+            <valueName>Vitality Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>AO Boards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>AO Library</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>AO Plank Spinner Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Bordeaux Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Chip Chest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Danya Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Entourage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Finishing Touches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <valueName>Mirasol Cradle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>American Olean</controllingFieldValue>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>Stair Step</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atlas Concorde</controllingFieldValue>
+            <valueName>Spec Saver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>12x24 BAM Waterfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>12x24 Blue Waterfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>12x24 Now Waterfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>12x24 Shades Watefall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>12x24 Structure Waterfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Advantage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>At Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Bella Via Stone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>CR Design Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Elevation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Laminam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Modern Mythology Card Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>PSS Rack A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>PSS Rack B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>PSS Rack C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Speakeasy Waterfall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crossville</controllingFieldValue>
+            <valueName>Sustainable Chip Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>Design Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>FLT 42</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>FLT 60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>FLT Old</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>Legend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida Tile</controllingFieldValue>
+            <valueName>Listello</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

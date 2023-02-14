@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <externalId>false</externalId>
+    <label>Program</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Training_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American Olean: The Porcelain Mystery</fullName>
+                <default>false</default>
+                <label>American Olean: The Porcelain Mystery</label>
+            </value>
+            <value>
+                <fullName>Buchtal: Benefits and Applications of Photo-catalytic Coatings</fullName>
+                <default>false</default>
+                <label>Buchtal: Benefits and Applications of Photo-catalytic Coatings</label>
+            </value>
+            <value>
+                <fullName>Crossville: Sustainable Solutions</fullName>
+                <default>false</default>
+                <label>Crossville: Sustainable Solutions</label>
+            </value>
+            <value>
+                <fullName>Crossville Plant Tour</fullName>
+                <default>false</default>
+                <label>Crossville Plant Tour</label>
+            </value>
+            <value>
+                <fullName>Florida Tile: Tile - The Natural Choice</fullName>
+                <default>false</default>
+                <label>Florida Tile: Tile - The Natural Choice</label>
+            </value>
+            <value>
+                <fullName>Florida Tile Plant Tour</fullName>
+                <default>false</default>
+                <label>Florida Tile Plant Tour</label>
+            </value>
+            <value>
+                <fullName>Noble: Sound Rated Floors for Hardwood, Ceramic, Tile &amp; Stone</fullName>
+                <default>false</default>
+                <label>Noble: Sound Rated Floors for Hardwood, Ceramic, Tile &amp; Stone</label>
+            </value>
+            <value>
+                <fullName>Realstone: Natural Stone Thin Veneer - The Basics</fullName>
+                <default>false</default>
+                <label>Realstone: Natural Stone Thin Veneer - The Basics</label>
+            </value>
+            <value>
+                <fullName>Schluter: Maximixing Tile Installation with Trim Profiles</fullName>
+                <default>false</default>
+                <label>Schluter: Maximixing Tile Installation with Trim Profiles</label>
+            </value>
+            <value>
+                <fullName>Schluter: Moisture Management in Tiled Showers</fullName>
+                <default>false</default>
+                <label>Schluter: Moisture Management in Tiled Showers</label>
+            </value>
+            <value>
+                <fullName>TEC: Care &amp; Maintenance of Natural Stone</fullName>
+                <default>false</default>
+                <label>TEC: Care &amp; Maintenance of Natural Stone</label>
+            </value>
+            <value>
+                <fullName>TEC: Installation of Large Format Tiles</fullName>
+                <default>false</default>
+                <label>TEC: Installation of Large Format Tiles</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>American Olean: The Porcelain Mystery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Buchtal: Benefits and Applications of Photo-catalytic Coatings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Crossville: Sustainable Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Florida Tile: Tile - The Natural Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Noble: Sound Rated Floors for Hardwood, Ceramic, Tile &amp; Stone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Realstone: Natural Stone Thin Veneer - The Basics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Schluter: Maximixing Tile Installation with Trim Profiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>Schluter: Moisture Management in Tiled Showers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>TEC: Care &amp; Maintenance of Natural Stone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CEU</controllingFieldValue>
+            <valueName>TEC: Installation of Large Format Tiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant Tour</controllingFieldValue>
+            <valueName>Crossville Plant Tour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plant Tour</controllingFieldValue>
+            <valueName>Florida Tile Plant Tour</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

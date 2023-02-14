@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Expense_Line_Item_from_Expense_Report</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Expense Line Item</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/a0A/e?CF00N30000006GH9K={!Expense_Report__c.Name}&amp;CF00N30000006GH9K_lkid={!Expense_Report__c.Id}&amp;retURL=%2F{!Expense_Report__c.Id}&amp;saveURL={!Expense_Report__c.Id}</url>
+</WebLink>

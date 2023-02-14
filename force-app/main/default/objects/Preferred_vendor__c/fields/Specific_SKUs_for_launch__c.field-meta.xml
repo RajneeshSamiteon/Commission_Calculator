@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specific_SKUs_for_launch__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Can we select specific SKU’s for the product launch or is it a set package</inlineHelpText>
+    <label>Specific SKUs for launch</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

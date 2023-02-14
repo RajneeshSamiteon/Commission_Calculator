@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participating_Vendor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The participating vendor who is contributing all or part of the cost of the expense</description>
+    <externalId>false</externalId>
+    <label>Participating Vendor</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not exist or does not match filter criteria.  Account = Vendor / Manufacturer</errorMessage>
+        <filterItems>
+            <field>Account.Account_Type__c</field>
+            <operation>equals</operation>
+            <value>Vendor/Manufacturer</value>
+        </filterItems>
+        <infoMessage>Account selection must be a Vendor/Manufacturer</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Expense Line Items (Participating Vendor)</relationshipLabel>
+    <relationshipName>Expense_Line_Items2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

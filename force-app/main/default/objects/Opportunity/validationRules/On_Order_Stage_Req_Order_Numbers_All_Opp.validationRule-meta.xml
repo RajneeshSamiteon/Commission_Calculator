@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Order_Stage_Req_Order_Numbers_All_Opp</fullName>
+    <active>false</active>
+    <description>When an opportunities stage is &quot;On Order&quot; the relevant order numbers from Dancik must be included.</description>
+    <errorConditionFormula>AND(
+   OR(ISPICKVAL(StageName, &quot;On Order&quot;),     
+       ISPICKVAL(StageName, &quot;Sold&quot;)
+      ),
+     ISBLANK(Dancik_Order_Numbers__c )
+   )</errorConditionFormula>
+    <errorDisplayField>Dancik_Order_Numbers__c</errorDisplayField>
+    <errorMessage>When an opportunities stage is &quot;On Order&quot; or &quot;Sold&quot; the relevant order numbers from Dancik must be included.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kroger_Products</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Dancik_Item__c</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>Sales_2_Year_Totals__c</columns>
+    <columns>Sales_Past_12_Months__c</columns>
+    <columns>Sales_Previous_12_Months__c</columns>
+    <columns>PRODUCT2.CREATED_DATE</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>National_Account__c</field>
+        <operation>equals</operation>
+        <value>Kroger Company</value>
+    </filters>
+    <label>Kroger Products</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

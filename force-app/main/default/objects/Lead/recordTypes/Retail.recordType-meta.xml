@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail</fullName>
+    <active>true</active>
+    <businessProcess>Retail</businessProcess>
+    <description>Record type to create retail type lead.</description>
+    <label>Retail</label>
+    <picklistValues>
+        <picklist>Account_Cat__c</picklist>
+        <values>
+            <fullName>Architect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bucket %26 Trowel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interior design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen %26 Bath</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cabinets__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Construction_Type__c</picklist>
+        <values>
+            <fullName>New Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Counter_Top__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Follow_up_Appointment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Kind_Of_Project__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Acuity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architect%2FDesigner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dodge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Like_to_pick_your_sample_up_at_your_LT__c</picklist>
+        <values>
+            <fullName>Louisville Tile Pick Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship To My Home</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Louisville_Tile_To_Pick_Up_From__c</picklist>
+        <values>
+            <fullName>Chattanooga%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cincinnati%2C OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evansville%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forth Wayne%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Rapids%2C MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indianapolis%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Johnson City%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laxington%2C KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville%2CKY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bend%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Westport Village %28Louisville%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Louisville_Tile_branch_that_services_you__c</picklist>
+        <values>
+            <fullName>Fishers%2C IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knoxville%2C TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexington%2C KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Louisville%2C KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nashville%2C TN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_method_of_contact__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Areas__c</picklist>
+        <values>
+            <fullName>Bathroom Floor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Floor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tub Splash%2FDeck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanity Wall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Timeline__c</picklist>
+        <values>
+            <fullName>3-8 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Tile Within a Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Hurry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Backsplash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bathroom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Consultation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entire Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Rooms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Room</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walk In</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Virtual_Appointment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Who_is_the_client_working_with__c</picklist>
+        <values>
+            <fullName>Client needs recommendation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The client has someone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

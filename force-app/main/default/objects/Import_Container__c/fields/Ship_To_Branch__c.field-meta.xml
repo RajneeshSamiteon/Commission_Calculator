@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_To_Branch__c</fullName>
+    <externalId>false</externalId>
+    <label>Ship To Branch</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chattanooga</fullName>
+                <default>false</default>
+                <label>Chattanooga</label>
+            </value>
+            <value>
+                <fullName>Cincinnati</fullName>
+                <default>false</default>
+                <label>Cincinnati</label>
+            </value>
+            <value>
+                <fullName>Evansville</fullName>
+                <default>false</default>
+                <label>Evansville</label>
+            </value>
+            <value>
+                <fullName>Indianapolis</fullName>
+                <default>false</default>
+                <label>Indianapolis</label>
+            </value>
+            <value>
+                <fullName>Knoxville</fullName>
+                <default>false</default>
+                <label>Knoxville</label>
+            </value>
+            <value>
+                <fullName>Lexington</fullName>
+                <default>false</default>
+                <label>Lexington</label>
+            </value>
+            <value>
+                <fullName>Louisville</fullName>
+                <default>false</default>
+                <label>Louisville</label>
+            </value>
+            <value>
+                <fullName>Nashville</fullName>
+                <default>false</default>
+                <label>Nashville</label>
+            </value>
+            <value>
+                <fullName>Produce Rd</fullName>
+                <default>false</default>
+                <label>Produce Rd</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

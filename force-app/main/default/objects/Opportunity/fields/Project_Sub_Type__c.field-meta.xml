@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Project Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Project_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Mixed Use</fullName>
+                <default>false</default>
+                <label>Mixed Use</label>
+            </value>
+            <value>
+                <fullName>Recreational</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Recreational</label>
+            </value>
+            <value>
+                <fullName>Religious</fullName>
+                <color>#B6E32E</color>
+                <default>false</default>
+                <label>Religious</label>
+            </value>
+            <value>
+                <fullName>Residential Multi-Family</fullName>
+                <color>#641CCF</color>
+                <default>false</default>
+                <label>Residential Multi-Family</label>
+            </value>
+            <value>
+                <fullName>Residential Single-Family</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Residential Single-Family</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Corporate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Financial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Mixed Use</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Recreational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Religious</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>Residential - New Construction</controllingFieldValue>
+            <controllingFieldValue>Residential - Remodel</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Residential Multi-Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>Residential - New Construction</controllingFieldValue>
+            <controllingFieldValue>Residential - Remodel</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Residential Single-Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Restaurants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commercial</controllingFieldValue>
+            <controllingFieldValue>Out of Territory</controllingFieldValue>
+            <controllingFieldValue>National Account</controllingFieldValue>
+            <controllingFieldValue>LTD Cross Territory</controllingFieldValue>
+            <valueName>Retail</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

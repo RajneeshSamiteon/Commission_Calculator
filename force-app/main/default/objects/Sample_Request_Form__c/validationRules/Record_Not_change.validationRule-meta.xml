@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Not_change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+! ISNEW() ,
+TEXT( Sample_Request_Form_Status__c )=&apos;Submitted&apos;,
+ISPICKVAL(PRIORVALUE(Sample_Request_Form_Status__c), &quot;Submitted&quot;),
+$Profile.Name != &quot;Sales Management&quot;, 
+$Profile.Name != &quot;System Administrator&quot;,
+$Profile.Name != &quot;Sampling Team&quot;
+
+)</errorConditionFormula>
+    <errorMessage>This form is submitted, you can&apos;t make changes now. If you like to make changes please get in touch with sampling team.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corporate_Expense_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Corporate Employee Expense Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airfare GL60330</fullName>
+                <default>false</default>
+                <label>Airfare GL60330</label>
+            </value>
+            <value>
+                <fullName>Auto Allowance GL60330</fullName>
+                <default>false</default>
+                <label>Auto Allowance GL60330</label>
+            </value>
+            <value>
+                <fullName>Auto Rental GL60330</fullName>
+                <default>false</default>
+                <label>Auto Rental GL60330</label>
+            </value>
+            <value>
+                <fullName>Auto Repair GL60125</fullName>
+                <default>false</default>
+                <label>Auto Repair GL60125</label>
+            </value>
+            <value>
+                <fullName>Cell Phone Allowance GL60330</fullName>
+                <default>false</default>
+                <label>Cell Phone Allowance GL60330</label>
+            </value>
+            <value>
+                <fullName>Customer Education GL60375</fullName>
+                <default>false</default>
+                <label>Customer Education GL60375</label>
+            </value>
+            <value>
+                <fullName>Customer Entertainment GL60335</fullName>
+                <default>false</default>
+                <label>Customer Entertainment GL60335</label>
+            </value>
+            <value>
+                <fullName>Customer Meals GL60335</fullName>
+                <default>false</default>
+                <label>Customer Meals GL60335</label>
+            </value>
+            <value>
+                <fullName>Customer Relations GL50120</fullName>
+                <default>false</default>
+                <label>Customer Relations GL50120</label>
+            </value>
+            <value>
+                <fullName>Employee Meals GL60335</fullName>
+                <default>false</default>
+                <label>Employee Meals GL60335</label>
+            </value>
+            <value>
+                <fullName>Events GL50120</fullName>
+                <default>false</default>
+                <label>Events GL50120</label>
+            </value>
+            <value>
+                <fullName>Fuel GL60330</fullName>
+                <default>false</default>
+                <label>Fuel GL60330</label>
+            </value>
+            <value>
+                <fullName>Home/Trade Shows GL60360</fullName>
+                <default>false</default>
+                <label>Home/Trade Shows GL60360</label>
+            </value>
+            <value>
+                <fullName>Local Cab/Bus GL60330</fullName>
+                <default>false</default>
+                <label>Local Cab/Bus GL60330</label>
+            </value>
+            <value>
+                <fullName>Lodging GL60330</fullName>
+                <default>false</default>
+                <label>Lodging GL60330</label>
+            </value>
+            <value>
+                <fullName>Membership Dues GL60210</fullName>
+                <default>false</default>
+                <label>Membership Dues GL60210</label>
+            </value>
+            <value>
+                <fullName>Mileage GL60330</fullName>
+                <default>false</default>
+                <label>Mileage GL60330</label>
+            </value>
+            <value>
+                <fullName>Other GLTBD</fullName>
+                <default>false</default>
+                <label>Other GLTBD</label>
+            </value>
+            <value>
+                <fullName>Parking GL60330</fullName>
+                <default>false</default>
+                <label>Parking GL60330</label>
+            </value>
+            <value>
+                <fullName>Postage GL60280</fullName>
+                <default>false</default>
+                <label>Postage GL60280</label>
+            </value>
+            <value>
+                <fullName>Professional Development GL60220</fullName>
+                <default>false</default>
+                <label>Professional Development GL60220</label>
+            </value>
+            <value>
+                <fullName>Showroom Expense GL60450</fullName>
+                <default>false</default>
+                <label>Showroom Expense GL60450</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

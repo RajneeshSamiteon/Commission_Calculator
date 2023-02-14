@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Availability_notes</fullName>
+    <active>true</active>
+    <description>Availability notes field is required if the lost due to availability is checked</description>
+    <errorConditionFormula>ISBLANK ( Availability_notes__c ) &amp;&amp; (Lost_due_to_availability__c = TRUE)</errorConditionFormula>
+    <errorDisplayField>Lost_due_to_availability__c</errorDisplayField>
+    <errorMessage>Please complete Availability Notes field</errorMessage>
+</ValidationRule>

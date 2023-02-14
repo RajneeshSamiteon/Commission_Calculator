@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_Date_Required_if_Stage_is_Bidding</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( Bid_Date__c ) &amp;&amp;
+( ISPICKVAL(StageName, &quot;Bidding&quot;))</errorConditionFormula>
+    <errorMessage>The Bid Date field is required if the Opportunity&apos;s stage is &quot;Bidding&quot;.  If the Bid Date is unknown, enter today&apos;s date.</errorMessage>
+</ValidationRule>

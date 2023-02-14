@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_of_costs_to_LT__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>List the costs to LT involved in this program</inlineHelpText>
+    <label>List of costs to LT</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

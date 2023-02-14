@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Ceramic_Sales__c</fullName>
+    <description>Field label changed per KF 1/19/2011
+Change field label per KF email 1/21/2011</description>
+    <externalId>false</externalId>
+    <label>What Are Your  Tile Sales Per Year?</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

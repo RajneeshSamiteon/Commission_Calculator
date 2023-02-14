@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financials__c</fullName>
+    <externalId>false</externalId>
+    <label>Financials</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prior Year Audited or Reviewed Financials - If Available</fullName>
+                <default>false</default>
+                <label>Prior Year Audited or Reviewed Financials - If Available</label>
+            </value>
+            <value>
+                <fullName>Prior Year Tax Returns - do not need to attach schedules</fullName>
+                <default>false</default>
+                <label>Prior Year Tax Returns - do not need to attach schedules</label>
+            </value>
+            <value>
+                <fullName>Internal Balance Sheet and Income Statement</fullName>
+                <default>false</default>
+                <label>Internal Balance Sheet and Income Statement</label>
+            </value>
+            <value>
+                <fullName>Bank Statements for Primary Operating Acccount</fullName>
+                <default>false</default>
+                <label>Bank Statements for Primary Operating Acccount</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Color_Required_for_Loose_Piece_Samples</fullName>
+    <active>true</active>
+    <errorConditionFormula>ispickval(  Sample_Type__c,  &quot;Loose Piece&quot;) &amp;&amp;
+isblank( Color__c  )</errorConditionFormula>
+    <errorMessage>Color is required for loose piece samples</errorMessage>
+</ValidationRule>

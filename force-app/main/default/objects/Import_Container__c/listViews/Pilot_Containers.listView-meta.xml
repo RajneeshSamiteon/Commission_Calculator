@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilot_Containers</fullName>
+    <columns>NAME</columns>
+    <columns>Container_Number__c</columns>
+    <columns>Manufacturer__c</columns>
+    <columns>Status__c</columns>
+    <columns>Branch__c</columns>
+    <columns>Contents__c</columns>
+    <columns>Description__c</columns>
+    <columns>PO_Numbers__c</columns>
+    <columns>Sailing_Date__c</columns>
+    <columns>USA_Port_Date__c</columns>
+    <columns>Warehouse_ETA__c</columns>
+    <columns>Arrival_Date__c</columns>
+    <columns>Freight_Broker__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Cost_per_Pound__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Contents__c</field>
+        <operation>includes</operation>
+        <value>Pilot</value>
+    </filters>
+    <label>Pilot Containers</label>
+    <sharedTo>
+        <group>ChattanoogaBranch</group>
+        <group>Executive</group>
+        <group>KnoxvilleBranch</group>
+        <group>OperationsPurchasing</group>
+        <role>VP_of_Sales_A_D</role>
+        <role>VPofMarketing</role>
+    </sharedTo>
+</ListView>

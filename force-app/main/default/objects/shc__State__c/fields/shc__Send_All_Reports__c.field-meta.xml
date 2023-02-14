@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shc__Send_All_Reports__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose to receive all previously not sent report or only the most recent one.</inlineHelpText>
+    <label>What Type of Reports To Send</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Send All Recent Reports</fullName>
+                <default>true</default>
+                <label>Send All Recent Reports</label>
+            </value>
+            <value>
+                <fullName>Send Last Report Only</fullName>
+                <default>false</default>
+                <label>Send Last Report Only</label>
+            </value>
+            <value>
+                <fullName>Send Report Only If Something Changed</fullName>
+                <default>false</default>
+                <label>Send Report Only If Something Changed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

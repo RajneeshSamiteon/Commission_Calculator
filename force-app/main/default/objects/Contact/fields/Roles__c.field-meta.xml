@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roles__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select all that apply</inlineHelpText>
+    <label>Roles</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounts Payable</fullName>
+                <default>false</default>
+                <label>Accounts Payable</label>
+            </value>
+            <value>
+                <fullName>Administrative Manager</fullName>
+                <default>false</default>
+                <label>Administrative Manager</label>
+            </value>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>Customer Servicer</fullName>
+                <default>false</default>
+                <label>Customer Servicer</label>
+            </value>
+            <value>
+                <fullName>Designer</fullName>
+                <default>false</default>
+                <label>Designer</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Estimator</fullName>
+                <default>false</default>
+                <label>Estimator</label>
+            </value>
+            <value>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+                <label>General Contractor</label>
+            </value>
+            <value>
+                <fullName>Homeowner</fullName>
+                <default>false</default>
+                <label>Homeowner</label>
+            </value>
+            <value>
+                <fullName>Landscape Architect</fullName>
+                <default>false</default>
+                <label>Landscape Architect</label>
+            </value>
+            <value>
+                <fullName>Location Manager</fullName>
+                <default>false</default>
+                <label>Location Manager</label>
+            </value>
+            <value>
+                <fullName>Owner/Operator</fullName>
+                <default>false</default>
+                <label>Owner/Operator</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Tile Contractor</fullName>
+                <default>false</default>
+                <label>Tile Contractor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

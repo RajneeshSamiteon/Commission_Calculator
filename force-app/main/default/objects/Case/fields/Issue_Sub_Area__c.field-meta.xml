@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Sub_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Issue Sub-Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Issue_Area__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apps</fullName>
+                <default>false</default>
+                <label>Apps</label>
+            </value>
+            <value>
+                <fullName>Dancik</fullName>
+                <default>false</default>
+                <label>Dancik</label>
+            </value>
+            <value>
+                <fullName>Dancik Decor24</fullName>
+                <default>false</default>
+                <label>Dancik Decor24</label>
+            </value>
+            <value>
+                <fullName>Dancik RADAR</fullName>
+                <default>false</default>
+                <label>Dancik RADAR</label>
+            </value>
+            <value>
+                <fullName>Desktop</fullName>
+                <default>false</default>
+                <label>Desktop</label>
+            </value>
+            <value>
+                <fullName>iPad</fullName>
+                <default>false</default>
+                <label>iPad</label>
+            </value>
+            <value>
+                <fullName>iPhone</fullName>
+                <default>false</default>
+                <label>iPhone</label>
+            </value>
+            <value>
+                <fullName>iTunes / iTunes sync</fullName>
+                <default>false</default>
+                <label>iTunes / iTunes sync</label>
+            </value>
+            <value>
+                <fullName>Laptop</fullName>
+                <default>false</default>
+                <label>Laptop</label>
+            </value>
+            <value>
+                <fullName>McGraw-Hill / Dodge</fullName>
+                <default>false</default>
+                <label>McGraw-Hill / Dodge</label>
+            </value>
+            <value>
+                <fullName>Network Connectivity</fullName>
+                <default>false</default>
+                <label>Network Connectivity</label>
+            </value>
+            <value>
+                <fullName>Outlook</fullName>
+                <default>false</default>
+                <label>Outlook</label>
+            </value>
+            <value>
+                <fullName>Outlook sync to Mobile</fullName>
+                <default>false</default>
+                <label>Outlook sync to Mobile</label>
+            </value>
+            <value>
+                <fullName>Printers</fullName>
+                <default>false</default>
+                <label>Printers</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>SF to Outlook sync</fullName>
+                <default>false</default>
+                <label>SF to Outlook sync</label>
+            </value>
+            <value>
+                <fullName>Shared Folders</fullName>
+                <default>false</default>
+                <label>Shared Folders</label>
+            </value>
+            <value>
+                <fullName>Terminal Services</fullName>
+                <default>false</default>
+                <label>Terminal Services</label>
+            </value>
+            <value>
+                <fullName>Thin Client</fullName>
+                <default>false</default>
+                <label>Thin Client</label>
+            </value>
+            <value>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+                <label>Voicemail</label>
+            </value>
+            <value>
+                <fullName>VPN</fullName>
+                <default>false</default>
+                <label>VPN</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Outlook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Outlook sync to Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>SF to Outlook sync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Hardware</controllingFieldValue>
+            <valueName>Desktop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Hardware</controllingFieldValue>
+            <valueName>Printers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Hardware</controllingFieldValue>
+            <valueName>Thin Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Apps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>iPad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>iPhone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>iTunes / iTunes sync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <valueName>Laptop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Voicemail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network / Connectivity</controllingFieldValue>
+            <valueName>Network Connectivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network / Connectivity</controllingFieldValue>
+            <valueName>Shared Folders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network / Connectivity</controllingFieldValue>
+            <valueName>Terminal Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Based Services</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Dancik Decor24</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Based Services</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Dancik RADAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Based Services</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>McGraw-Hill / Dodge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Based Services</controllingFieldValue>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>Dancik</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Training</controllingFieldValue>
+            <valueName>VPN</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

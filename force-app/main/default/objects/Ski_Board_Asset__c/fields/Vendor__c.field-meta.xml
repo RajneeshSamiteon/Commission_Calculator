@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor__c</fullName>
+    <externalId>false</externalId>
+    <label>Vendor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American Olean</fullName>
+                <default>false</default>
+                <label>American Olean</label>
+            </value>
+            <value>
+                <fullName>Aqua Mix</fullName>
+                <default>false</default>
+                <label>Aqua Mix</label>
+            </value>
+            <value>
+                <fullName>Atlas Concorde</fullName>
+                <default>false</default>
+                <label>Atlas Concorde</label>
+            </value>
+            <value>
+                <fullName>Casa Dolce Casa</fullName>
+                <default>false</default>
+                <label>Casa Dolce Casa</label>
+            </value>
+            <value>
+                <fullName>Crossville</fullName>
+                <default>false</default>
+                <label>Crossville</label>
+            </value>
+            <value>
+                <fullName>Custom Building Products</fullName>
+                <default>false</default>
+                <label>Custom Building Products</label>
+            </value>
+            <value>
+                <fullName>Florida Tile</fullName>
+                <default>false</default>
+                <label>Florida Tile</label>
+            </value>
+            <value>
+                <fullName>Global</fullName>
+                <default>false</default>
+                <label>Global</label>
+            </value>
+            <value>
+                <fullName>Imola</fullName>
+                <default>false</default>
+                <label>Imola</label>
+            </value>
+            <value>
+                <fullName>Jeffrey Court</fullName>
+                <default>false</default>
+                <label>Jeffrey Court</label>
+            </value>
+            <value>
+                <fullName>Laticrete</fullName>
+                <default>false</default>
+                <label>Laticrete</label>
+            </value>
+            <value>
+                <fullName>LTD Forum</fullName>
+                <default>false</default>
+                <label>LTD Forum</label>
+            </value>
+            <value>
+                <fullName>Mandala</fullName>
+                <default>false</default>
+                <label>Mandala</label>
+            </value>
+            <value>
+                <fullName>Mission Stone</fullName>
+                <default>false</default>
+                <label>Mission Stone</label>
+            </value>
+            <value>
+                <fullName>MLW</fullName>
+                <default>false</default>
+                <label>MLW</label>
+            </value>
+            <value>
+                <fullName>Noble</fullName>
+                <default>false</default>
+                <label>Noble</label>
+            </value>
+            <value>
+                <fullName>Oceanside</fullName>
+                <default>false</default>
+                <label>Oceanside</label>
+            </value>
+            <value>
+                <fullName>Orchid</fullName>
+                <default>false</default>
+                <label>Orchid</label>
+            </value>
+            <value>
+                <fullName>Panaria</fullName>
+                <default>false</default>
+                <label>Panaria</label>
+            </value>
+            <value>
+                <fullName>Ragno</fullName>
+                <default>false</default>
+                <label>Ragno</label>
+            </value>
+            <value>
+                <fullName>Realstone</fullName>
+                <default>false</default>
+                <label>Realstone</label>
+            </value>
+            <value>
+                <fullName>Royal Mosa</fullName>
+                <default>false</default>
+                <label>Royal Mosa</label>
+            </value>
+            <value>
+                <fullName>Schluter</fullName>
+                <default>false</default>
+                <label>Schluter</label>
+            </value>
+            <value>
+                <fullName>Sonoma Market</fullName>
+                <default>false</default>
+                <label>Sonoma Market</label>
+            </value>
+            <value>
+                <fullName>Suntouch</fullName>
+                <default>false</default>
+                <label>Suntouch</label>
+            </value>
+            <value>
+                <fullName>T&amp;M</fullName>
+                <default>false</default>
+                <label>T&amp;M</label>
+            </value>
+            <value>
+                <fullName>TEC</fullName>
+                <default>false</default>
+                <label>TEC</label>
+            </value>
+            <value>
+                <fullName>Urban Collection</fullName>
+                <default>false</default>
+                <label>Urban Collection</label>
+            </value>
+            <value>
+                <fullName>Waterjet</fullName>
+                <default>false</default>
+                <label>Waterjet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

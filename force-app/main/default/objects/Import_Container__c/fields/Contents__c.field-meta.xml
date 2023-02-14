@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contents__c</fullName>
+    <externalId>false</externalId>
+    <label>Contents</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Altar&apos;d State</fullName>
+                <default>false</default>
+                <label>Altar&apos;d State</label>
+            </value>
+            <value>
+                <fullName>BWR</fullName>
+                <default>false</default>
+                <label>BWR</label>
+            </value>
+            <value>
+                <fullName>General Inventory</fullName>
+                <default>false</default>
+                <label>General Inventory</label>
+            </value>
+            <value>
+                <fullName>Genesco</fullName>
+                <default>false</default>
+                <label>Genesco</label>
+            </value>
+            <value>
+                <fullName>Hampton</fullName>
+                <default>false</default>
+                <label>Hampton</label>
+            </value>
+            <value>
+                <fullName>Hilton</fullName>
+                <default>false</default>
+                <label>Hilton</label>
+            </value>
+            <value>
+                <fullName>KFC</fullName>
+                <default>false</default>
+                <label>KFC</label>
+            </value>
+            <value>
+                <fullName>Kroger</fullName>
+                <default>false</default>
+                <label>Kroger</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Orders</fullName>
+                <default>false</default>
+                <label>Orders</label>
+            </value>
+            <value>
+                <fullName>Pilot</fullName>
+                <default>false</default>
+                <label>Pilot</label>
+            </value>
+            <value>
+                <fullName>Pollo Tropical</fullName>
+                <default>false</default>
+                <label>Pollo Tropical</label>
+            </value>
+            <value>
+                <fullName>Samples</fullName>
+                <default>false</default>
+                <label>Samples</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>9</visibleLines>
+</CustomField>

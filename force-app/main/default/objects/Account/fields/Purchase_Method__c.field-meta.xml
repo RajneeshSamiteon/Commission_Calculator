@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Method__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Central Purchase by Account; Contractor Purchase by individual installer; Hybrid Purchase could be either/or.</inlineHelpText>
+    <label>Purchase Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central Purchase</fullName>
+                <default>false</default>
+                <label>Central Purchase</label>
+            </value>
+            <value>
+                <fullName>Contractor Purchase</fullName>
+                <default>false</default>
+                <label>Contractor Purchase</label>
+            </value>
+            <value>
+                <fullName>Hybrid Purchase</fullName>
+                <default>false</default>
+                <label>Hybrid Purchase</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

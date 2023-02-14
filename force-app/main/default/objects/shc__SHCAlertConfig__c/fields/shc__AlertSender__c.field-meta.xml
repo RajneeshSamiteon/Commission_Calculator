@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shc__AlertSender__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Email of the user that the alert emails should be sent as.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This value should be a valid OrgWideEmail address (Setup -&gt; Administration Setup -&gt; Email Administration -&gt; Organization-Wide Addresses)</inlineHelpText>
+    <label>AlertSender</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

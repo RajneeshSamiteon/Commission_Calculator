@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Resource__c</fullName>
+    <externalId>false</externalId>
+    <label>Mobile Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Resource_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cell Phone</fullName>
+                <default>false</default>
+                <label>Cell Phone</label>
+            </value>
+            <value>
+                <fullName>iPad</fullName>
+                <default>false</default>
+                <label>iPad</label>
+            </value>
+            <value>
+                <fullName>iPhone</fullName>
+                <default>false</default>
+                <label>iPhone</label>
+            </value>
+            <value>
+                <fullName>Wireless Hub</fullName>
+                <default>false</default>
+                <label>Wireless Hub</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <valueName>Cell Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <valueName>iPad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <valueName>iPhone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile</controllingFieldValue>
+            <valueName>Wireless Hub</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLScheduler__Choose_One_Day_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>!isblank( (GLScheduler__Days_in_month__c) )
+&amp;&amp;
+!isblank( (GLScheduler__Days_of_the_Week__c) )</errorConditionFormula>
+    <errorDisplayField>GLScheduler__Days_in_month__c</errorDisplayField>
+    <errorMessage>You can only specify either the day in the month or the day of the week.</errorMessage>
+</ValidationRule>

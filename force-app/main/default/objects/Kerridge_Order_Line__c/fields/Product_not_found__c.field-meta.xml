@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_not_found__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISBLANK(Product__r.Id)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product not found</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

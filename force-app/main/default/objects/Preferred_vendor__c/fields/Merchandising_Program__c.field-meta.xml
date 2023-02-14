@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merchandising_Program__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Discuss your merchandising program, visualization tools, and digital tools such as QR codes or other tools to help in promotion and sales</inlineHelpText>
+    <label>Merchandising Program</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

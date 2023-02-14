@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StageName_is_Prototyping</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( StageName , &apos;Prototyping&apos;),  OR(ISPICKVAL( Project_Registration__c , &apos;None&apos;),ISPICKVAL( Project_Registration__c , &apos;&apos;)) )</errorConditionFormula>
+    <errorDisplayField>Project_Registration__c</errorDisplayField>
+    <errorMessage>Job must be registered before progressing to Prototyping stage.</errorMessage>
+</ValidationRule>

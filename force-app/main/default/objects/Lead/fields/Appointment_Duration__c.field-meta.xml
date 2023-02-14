@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Duration__c</fullName>
+    <description>This is the scheduled duration of the appointment booked by online (Acuity) scheduling in minutes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the scheduled duration of the appointment booked by online (Acuity) scheduling in minutes</inlineHelpText>
+    <label>Appointment Duration</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirm_Amount_Result__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>At time of closing the Opportunity, you MUST confirm that the current Amount entered is accurate and then select a result here.  If the amount is NOT accurate, please update before marking the Oppty as Sold.</inlineHelpText>
+    <label>Confirm Amount Result</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Checked - No Update Needed</fullName>
+                <default>false</default>
+                <label>Checked - No Update Needed</label>
+            </value>
+            <value>
+                <fullName>Checked - Lowered Amount</fullName>
+                <default>false</default>
+                <label>Checked - Lowered Amount</label>
+            </value>
+            <value>
+                <fullName>Checked - Raised Amount</fullName>
+                <default>false</default>
+                <label>Checked - Raised Amount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

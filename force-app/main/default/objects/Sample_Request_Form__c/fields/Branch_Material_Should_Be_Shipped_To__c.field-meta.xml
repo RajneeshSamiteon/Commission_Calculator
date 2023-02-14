@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Material_Should_Be_Shipped_To__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Branch Material should be shipped to.</inlineHelpText>
+    <label>Branch material should be shipped to</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nashville</fullName>
+                <default>false</default>
+                <label>Nashville</label>
+            </value>
+            <value>
+                <fullName>Johnson City</fullName>
+                <default>false</default>
+                <label>Johnson City</label>
+            </value>
+            <value>
+                <fullName>Chattanooga</fullName>
+                <default>false</default>
+                <label>Chattanooga</label>
+            </value>
+            <value>
+                <fullName>Knoxville</fullName>
+                <default>false</default>
+                <label>Knoxville</label>
+            </value>
+            <value>
+                <fullName>Louisville</fullName>
+                <default>false</default>
+                <label>Louisville</label>
+            </value>
+            <value>
+                <fullName>Evansville</fullName>
+                <default>false</default>
+                <label>Evansville</label>
+            </value>
+            <value>
+                <fullName>Fishers</fullName>
+                <default>false</default>
+                <label>Fishers</label>
+            </value>
+            <value>
+                <fullName>Lexington</fullName>
+                <default>false</default>
+                <label>Lexington</label>
+            </value>
+            <value>
+                <fullName>Cincinnati</fullName>
+                <default>false</default>
+                <label>Cincinnati</label>
+            </value>
+            <value>
+                <fullName>Fort Wayne</fullName>
+                <default>false</default>
+                <label>Fort Wayne</label>
+            </value>
+            <value>
+                <fullName>South Bend</fullName>
+                <default>false</default>
+                <label>South Bend</label>
+            </value>
+            <value>
+                <fullName>Grand Rapids</fullName>
+                <default>false</default>
+                <label>Grand Rapids</label>
+            </value>
+            <value>
+                <fullName>West Port Village</fullName>
+                <default>false</default>
+                <label>West Port Village</label>
+            </value>
+            <value>
+                <fullName>Chicago</fullName>
+                <default>false</default>
+                <label>Chicago</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

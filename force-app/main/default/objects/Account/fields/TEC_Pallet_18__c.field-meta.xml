@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEC_Pallet_18__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>TEC Pallet 18 promo</description>
+    <externalId>false</externalId>
+    <label>TEC Pallet 18</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

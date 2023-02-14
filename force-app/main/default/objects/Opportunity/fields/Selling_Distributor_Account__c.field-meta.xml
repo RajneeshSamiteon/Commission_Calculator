@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selling_Distributor_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Selling Distributor Account name for out of territory Opportunity sharing.</inlineHelpText>
+    <label>Selling Distributor Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Account you are trying to add does not exist or is not a distributor type.</errorMessage>
+        <filterItems>
+            <field>Account.Account_Type__c</field>
+            <operation>equals</operation>
+            <value>Distributor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities - Selling Distributor</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shc__AlertDelay_validation_rule</fullName>
+    <active>true</active>
+    <description>Alert delay cannot be negative</description>
+    <errorConditionFormula>shc__Alert_Delay__c  &lt;=  0</errorConditionFormula>
+    <errorDisplayField>shc__Alert_Delay__c</errorDisplayField>
+    <errorMessage>Value should be positive</errorMessage>
+</ValidationRule>

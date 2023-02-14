@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System__c</fullName>
+    <externalId>false</externalId>
+    <label>System</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>iTunes</fullName>
+                <default>false</default>
+                <label>iTunes</label>
+            </value>
+            <value>
+                <fullName>gMail</fullName>
+                <default>false</default>
+                <label>gMail</label>
+            </value>
+            <value>
+                <fullName>Box</fullName>
+                <default>false</default>
+                <label>Box</label>
+            </value>
+            <value>
+                <fullName>AO Decor</fullName>
+                <default>false</default>
+                <label>AO Decor</label>
+            </value>
+            <value>
+                <fullName>CR Connections</fullName>
+                <default>false</default>
+                <label>CR Connections</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

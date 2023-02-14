@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Building</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Building</label>
+            </value>
+            <value>
+                <fullName>Factory</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Factory</label>
+            </value>
+            <value>
+                <fullName>Port</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Port</label>
+            </value>
+            <value>
+                <fullName>Delay - Vessel Overbooked</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Delay - Vessel Overbooked</label>
+            </value>
+            <value>
+                <fullName>Sailing</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Sailing</label>
+            </value>
+            <value>
+                <fullName>Customs</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Customs</label>
+            </value>
+            <value>
+                <fullName>Manifest Hold</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Manifest Hold</label>
+            </value>
+            <value>
+                <fullName>Held for Examination</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Held for Examination</label>
+            </value>
+            <value>
+                <fullName>Delay - Weather</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Delay - Weather</label>
+            </value>
+            <value>
+                <fullName>Delay - Port Congestion</fullName>
+                <color>#B6E32E</color>
+                <default>false</default>
+                <label>Delay - Port Congestion</label>
+            </value>
+            <value>
+                <fullName>Delay - Backlog at Rail</fullName>
+                <color>#641CCF</color>
+                <default>false</default>
+                <label>Delay - Backlog at Rail</label>
+            </value>
+            <value>
+                <fullName>Rail</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Rail</label>
+            </value>
+            <value>
+                <fullName>Delivered</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>Delivered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shc__Alert_Email_Sender__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field will use the selected contact for the &apos;from&apos; field in the alert emails.</description>
+    <externalId>false</externalId>
+    <label>Alert Email Sender</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contact For Sender Field</relationshipLabel>
+    <relationshipName>States</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

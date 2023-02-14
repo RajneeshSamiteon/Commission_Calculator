@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Expense Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airfare GL50040</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Airfare GL50040</label>
+            </value>
+            <value>
+                <fullName>Auto Allowance GL50040</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Auto Allowance GL50040</label>
+            </value>
+            <value>
+                <fullName>Auto Rental GL50040</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Auto Rental GL50040</label>
+            </value>
+            <value>
+                <fullName>Auto Repair GL60125</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Auto Repair GL60125</label>
+            </value>
+            <value>
+                <fullName>Cell Phone Allowance GL60052</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Cell Phone Allowance GL60052</label>
+            </value>
+            <value>
+                <fullName>Customer Education GL60375</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Customer Education GL60375</label>
+            </value>
+            <value>
+                <fullName>Customer Entertainment GL50050</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Customer Entertainment GL50050</label>
+            </value>
+            <value>
+                <fullName>Customer Meals GL50050</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Customer Meals GL50050</label>
+            </value>
+            <value>
+                <fullName>Customer Relations GL50120</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Customer Relations GL50120</label>
+            </value>
+            <value>
+                <fullName>Employee Meals GL50040</fullName>
+                <color>#B6E32E</color>
+                <default>false</default>
+                <label>Employee Meals GL50040</label>
+            </value>
+            <value>
+                <fullName>Employee Relations GL60380</fullName>
+                <color>#641CCF</color>
+                <default>false</default>
+                <label>Employee Relations GL60380</label>
+            </value>
+            <value>
+                <fullName>Fuel GL50040</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>Fuel GL50040</label>
+            </value>
+            <value>
+                <fullName>Home Shows GL60360</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Home Shows GL60360</label>
+            </value>
+            <value>
+                <fullName>iPad Data &amp; Data Cards GL60054</fullName>
+                <color>#8F6429</color>
+                <default>false</default>
+                <label>iPad Data &amp; Data Cards GL60054</label>
+            </value>
+            <value>
+                <fullName>iPhone/iPad App Purchase GL60324</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>iPhone/iPad App Purchase GL60324</label>
+            </value>
+            <value>
+                <fullName>Local Cab/Bus GL50040</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Local Cab/Bus GL50040</label>
+            </value>
+            <value>
+                <fullName>Lodging GL50040</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Lodging GL50040</label>
+            </value>
+            <value>
+                <fullName>Membership Dues GL60210</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Membership Dues GL60210</label>
+            </value>
+            <value>
+                <fullName>Mileage GL50040</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Mileage GL50040</label>
+            </value>
+            <value>
+                <fullName>Office Expense GL60290</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Office Expense GL60290</label>
+            </value>
+            <value>
+                <fullName>Other GLTBD</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Other GLTBD</label>
+            </value>
+            <value>
+                <fullName>Parking GL50040</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Parking GL50040</label>
+            </value>
+            <value>
+                <fullName>Postage GL60280</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Postage GL60280</label>
+            </value>
+            <value>
+                <fullName>Professional Development GL60220</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Professional Development GL60220</label>
+            </value>
+            <value>
+                <fullName>Showroom Expense GL60450</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Showroom Expense GL60450</label>
+            </value>
+            <value>
+                <fullName>Trade Shows / Sales Meetings GL60365</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Trade Shows / Sales Meetings GL60365</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Does_the_Dealer_Stock_Tile__c</fullName>
+    <description>Field label changed per KF 1/19/2011
+Changed field type to text from picklist on 2/22/11 per KF</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter tile brands and series stocked by the customer</inlineHelpText>
+    <label>What Tiles Brands Do You Stock?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

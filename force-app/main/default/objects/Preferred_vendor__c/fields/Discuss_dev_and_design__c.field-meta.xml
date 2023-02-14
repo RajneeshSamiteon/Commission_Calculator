@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discuss_dev_and_design__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Discuss your development and design team that makes your product development industry leaders</inlineHelpText>
+    <label>Discuss dev. and design</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affected_functionality__c</fullName>
+    <externalId>false</externalId>
+    <label>Affected functionality</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+                <label>Opportunity</label>
+            </value>
+            <value>
+                <fullName>Preferred Vendor RPFs</fullName>
+                <default>false</default>
+                <label>Preferred Vendor RPFs</label>
+            </value>
+            <value>
+                <fullName>Sample Request</fullName>
+                <default>false</default>
+                <label>Sample Request</label>
+            </value>
+            <value>
+                <fullName>Home Page</fullName>
+                <default>false</default>
+                <label>Home Page</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Credit App</fullName>
+                <default>false</default>
+                <label>Credit App</label>
+            </value>
+            <value>
+                <fullName>Support Tickets</fullName>
+                <default>false</default>
+                <label>Support Tickets</label>
+            </value>
+            <value>
+                <fullName>Report &amp; Dashboard</fullName>
+                <default>false</default>
+                <label>Report &amp; Dashboard</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

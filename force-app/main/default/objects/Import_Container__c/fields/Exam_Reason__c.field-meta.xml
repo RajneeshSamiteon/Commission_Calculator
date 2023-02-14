@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exam_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Exam Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A-TECT</fullName>
+                <default>false</default>
+                <label>A-TECT</label>
+            </value>
+            <value>
+                <fullName>CBPa</fullName>
+                <default>false</default>
+                <label>CBPa</label>
+            </value>
+            <value>
+                <fullName>FDA</fullName>
+                <default>false</default>
+                <label>FDA</label>
+            </value>
+            <value>
+                <fullName>Intensive</fullName>
+                <default>false</default>
+                <label>Intensive</label>
+            </value>
+            <value>
+                <fullName>MET</fullName>
+                <default>false</default>
+                <label>MET</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>USDA</fullName>
+                <default>false</default>
+                <label>USDA</label>
+            </value>
+            <value>
+                <fullName>VACIS</fullName>
+                <default>false</default>
+                <label>VACIS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>A-TECT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>CBPa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>FDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>Intensive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>MET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Held for Examination</controllingFieldValue>
+            <valueName>VACIS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

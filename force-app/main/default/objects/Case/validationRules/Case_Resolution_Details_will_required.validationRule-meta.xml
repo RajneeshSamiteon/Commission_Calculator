@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Resolution_Details_will_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND 
+(ISPICKVAL(Status, &apos;Closed&apos;),LEN(Case_Resolution_Details__c)==0 )</errorConditionFormula>
+    <errorDisplayField>Case_Resolution_Details__c</errorDisplayField>
+    <errorMessage>Please Complete Case Resolution Details</errorMessage>
+</ValidationRule>

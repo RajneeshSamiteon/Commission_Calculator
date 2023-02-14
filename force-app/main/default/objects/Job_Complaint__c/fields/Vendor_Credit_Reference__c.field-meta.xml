@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Credit_Reference__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The vendor&apos;s reference number for the credit issues to LTD.</inlineHelpText>
+    <label>Vendor Credit Reference #</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

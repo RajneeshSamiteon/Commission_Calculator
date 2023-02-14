@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Issue type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Add vendors &amp; series</fullName>
+                <default>false</default>
+                <label>Add vendors &amp; series</label>
+            </value>
+            <value>
+                <fullName>Discontinue vendors &amp; series</fullName>
+                <default>false</default>
+                <label>Discontinue vendors &amp; series</label>
+            </value>
+            <value>
+                <fullName>Remove duplicate opportunity</fullName>
+                <default>false</default>
+                <label>Remove duplicate opportunity</label>
+            </value>
+            <value>
+                <fullName>Reports</fullName>
+                <default>false</default>
+                <label>Reports</label>
+            </value>
+            <value>
+                <fullName>User Account Maintenance</fullName>
+                <default>false</default>
+                <label>User Account Maintenance</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Account Owner Change</fullName>
+                <default>false</default>
+                <label>Account Owner Change</label>
+            </value>
+            <value>
+                <fullName>Change Request Enhancement</fullName>
+                <default>false</default>
+                <label>Change Request / Enhancement</label>
+            </value>
+            <value>
+                <fullName>Opportunity Owner Change</fullName>
+                <default>false</default>
+                <label>Opportunity Owner Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

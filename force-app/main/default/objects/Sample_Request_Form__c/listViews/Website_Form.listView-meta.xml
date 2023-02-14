@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Website_Form</fullName>
+    <columns>NAME</columns>
+    <columns>Sample_Request_Form_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Project_Name__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Submitted_By__c</field>
+        <operation>equals</operation>
+        <value>Website Enquiry</value>
+    </filters>
+    <label>Website Form</label>
+</ListView>

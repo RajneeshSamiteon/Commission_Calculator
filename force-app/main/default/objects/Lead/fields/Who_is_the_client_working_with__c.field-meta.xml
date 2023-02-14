@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Who_is_the_client_working_with__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select whether the client is already working with a professional to help them with the project or whether they need a recommendation.  Additional clarification can be entered in the Client Partner Notes field.</inlineHelpText>
+    <label>Who is the client working with</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The client has someone</fullName>
+                <default>false</default>
+                <label>The client has someone</label>
+            </value>
+            <value>
+                <fullName>Client needs recommendation</fullName>
+                <default>false</default>
+                <label>Client needs recommendation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

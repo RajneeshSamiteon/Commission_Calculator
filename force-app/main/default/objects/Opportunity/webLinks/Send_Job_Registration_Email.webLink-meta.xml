@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Job_Registration_Email</fullName>
+    <availability>online</availability>
+    <description>Sends job registration email alert to internal support</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Job Registration Email</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)}
+
+var oppObj = new sforce.SObject(&quot;Opportunity&quot;); 
+var date = new Date(&apos;{!TODAY()}&apos;); 
+oppObj.Id = &apos;{!Opportunity.Id}&apos;; 
+oppObj.Job_Registration_Sent__c = date;
+sforce.connection.update([oppObj]);
+
+window.location.reload();</url>
+</WebLink>

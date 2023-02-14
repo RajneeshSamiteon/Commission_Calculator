@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shc__SendReports__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Set to true if summary report emails will be sent.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set to true if summary report emails will be sent.</inlineHelpText>
+    <label>SendReports</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

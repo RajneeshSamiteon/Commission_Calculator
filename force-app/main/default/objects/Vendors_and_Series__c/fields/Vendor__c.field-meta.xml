@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor__c</fullName>
+    <externalId>false</externalId>
+    <label>Vendor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American Olean</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>American Olean</label>
+            </value>
+            <value>
+                <fullName>American Universal</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>American Universal</label>
+            </value>
+            <value>
+                <fullName>Anatolia</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Anatolia</label>
+            </value>
+            <value>
+                <fullName>Ann Sacks</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Ann Sacks</label>
+            </value>
+            <value>
+                <fullName>Anthology</fullName>
+                <default>false</default>
+                <label>Anthology</label>
+            </value>
+            <value>
+                <fullName>AOT</fullName>
+                <color>#33FFFF</color>
+                <default>false</default>
+                <label>AOT</label>
+            </value>
+            <value>
+                <fullName>Aqua Mix</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Aqua Mix</label>
+            </value>
+            <value>
+                <fullName>Artistic Tile</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Artistic Tile</label>
+            </value>
+            <value>
+                <fullName>Atlas Concorde</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Atlas Concorde</label>
+            </value>
+            <value>
+                <fullName>Atlas USA</fullName>
+                <default>false</default>
+                <label>Atlas USA</label>
+            </value>
+            <value>
+                <fullName>Bostik</fullName>
+                <default>false</default>
+                <label>Bostik</label>
+            </value>
+            <value>
+                <fullName>Caribe</fullName>
+                <color>#B6E32E</color>
+                <default>false</default>
+                <label>Caribe</label>
+            </value>
+            <value>
+                <fullName>Ceramica Vogue</fullName>
+                <default>false</default>
+                <label>Ceramica Vogue</label>
+            </value>
+            <value>
+                <fullName>Crossville</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>Crossville</label>
+            </value>
+            <value>
+                <fullName>Custom Building Products</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Custom Building Products</label>
+            </value>
+            <value>
+                <fullName>E&amp;S</fullName>
+                <color>#8F6429</color>
+                <default>false</default>
+                <label>E&amp;S</label>
+            </value>
+            <value>
+                <fullName>EMIL</fullName>
+                <default>false</default>
+                <label>EMIL</label>
+            </value>
+            <value>
+                <fullName>Fila</fullName>
+                <default>false</default>
+                <label>Fila</label>
+            </value>
+            <value>
+                <fullName>Florida Tile</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Florida Tile</label>
+            </value>
+            <value>
+                <fullName>Florim</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Florim</label>
+            </value>
+            <value>
+                <fullName>Glass Tile &amp; Stone</fullName>
+                <default>false</default>
+                <label>Glass Tile &amp; Stone</label>
+            </value>
+            <value>
+                <fullName>Global</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Global</label>
+            </value>
+            <value>
+                <fullName>Ilva</fullName>
+                <default>false</default>
+                <label>Ilva</label>
+            </value>
+            <value>
+                <fullName>Imola</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Imola</label>
+            </value>
+            <value>
+                <fullName>Ironrock</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Ironrock</label>
+            </value>
+            <value>
+                <fullName>Island Stone</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Island Stone</label>
+            </value>
+            <value>
+                <fullName>Jeffrey Court</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Jeffrey Court</label>
+            </value>
+            <value>
+                <fullName>Laticrete</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Laticrete</label>
+            </value>
+            <value>
+                <fullName>Lilli Cement</fullName>
+                <default>false</default>
+                <label>Lilli Cement</label>
+            </value>
+            <value>
+                <fullName>Lungarno</fullName>
+                <default>false</default>
+                <label>Lungarno</label>
+            </value>
+            <value>
+                <fullName>Mandala</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Mandala</label>
+            </value>
+            <value>
+                <fullName>Marca Corona</fullName>
+                <color>#641CCF</color>
+                <default>false</default>
+                <label>Marca Corona</label>
+            </value>
+            <value>
+                <fullName>Margarf</fullName>
+                <default>false</default>
+                <label>Margarf</label>
+            </value>
+            <value>
+                <fullName>Mediterranea</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Mediterranea</label>
+            </value>
+            <value>
+                <fullName>MLW</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>MLW</label>
+            </value>
+            <value>
+                <fullName>NAC</fullName>
+                <color>#8F6429</color>
+                <default>false</default>
+                <label>NAC</label>
+            </value>
+            <value>
+                <fullName>Nasco</fullName>
+                <default>false</default>
+                <label>Nasco</label>
+            </value>
+            <value>
+                <fullName>NSR</fullName>
+                <default>false</default>
+                <label>NSR</label>
+            </value>
+            <value>
+                <fullName>New Ravenna</fullName>
+                <default>false</default>
+                <label>New Ravenna</label>
+            </value>
+            <value>
+                <fullName>Noble</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>Noble</label>
+            </value>
+            <value>
+                <fullName>Oceanside</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Oceanside</label>
+            </value>
+            <value>
+                <fullName>Panaria</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Panaria</label>
+            </value>
+            <value>
+                <fullName>Portobello</fullName>
+                <default>false</default>
+                <label>Portobello</label>
+            </value>
+            <value>
+                <fullName>Ragno</fullName>
+                <default>false</default>
+                <label>Ragno</label>
+            </value>
+            <value>
+                <fullName>Raimondi</fullName>
+                <default>false</default>
+                <label>Raimondi</label>
+            </value>
+            <value>
+                <fullName>Real Wood</fullName>
+                <default>false</default>
+                <label>Real Wood</label>
+            </value>
+            <value>
+                <fullName>Realstone</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Realstone</label>
+            </value>
+            <value>
+                <fullName>Royal Mosa</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Royal Mosa</label>
+            </value>
+            <value>
+                <fullName>Royal Thin Brick</fullName>
+                <default>false</default>
+                <label>Royal Thin Brick</label>
+            </value>
+            <value>
+                <fullName>Roca</fullName>
+                <default>false</default>
+                <label>Roca</label>
+            </value>
+            <value>
+                <fullName>Schluter</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Schluter</label>
+            </value>
+            <value>
+                <fullName>Seneca</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Seneca</label>
+            </value>
+            <value>
+                <fullName>Sicis</fullName>
+                <color>#B6E32E</color>
+                <default>false</default>
+                <label>Sicis</label>
+            </value>
+            <value>
+                <fullName>Solistone</fullName>
+                <color>#641CCF</color>
+                <default>false</default>
+                <label>Solistone</label>
+            </value>
+            <value>
+                <fullName>Sonoma</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>Sonoma</label>
+            </value>
+            <value>
+                <fullName>Stone Impressions</fullName>
+                <default>false</default>
+                <label>Stone Impressions</label>
+            </value>
+            <value>
+                <fullName>Stone Partnership</fullName>
+                <default>false</default>
+                <label>Stone Partnership</label>
+            </value>
+            <value>
+                <fullName>Summitville</fullName>
+                <color>#2F5D85</color>
+                <default>false</default>
+                <label>Summitville</label>
+            </value>
+            <value>
+                <fullName>Suntouch</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Suntouch</label>
+            </value>
+            <value>
+                <fullName>T&amp;M</fullName>
+                <color>#8F6429</color>
+                <default>false</default>
+                <label>T&amp;M</label>
+            </value>
+            <value>
+                <fullName>Tarkmak</fullName>
+                <default>false</default>
+                <label>Tarkmak</label>
+            </value>
+            <value>
+                <fullName>TEC</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>TEC</label>
+            </value>
+            <value>
+                <fullName>Trade Associations</fullName>
+                <default>false</default>
+                <label>Trade Associations</label>
+            </value>
+            <value>
+                <fullName>Universal Tile</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Universal Tile</label>
+            </value>
+            <value>
+                <fullName>Urban Collection</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Urban Collection</label>
+            </value>
+            <value>
+                <fullName>Urban Collection Boutique</fullName>
+                <default>false</default>
+                <label>Urban Collection Boutique</label>
+            </value>
+            <value>
+                <fullName>USG</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>USG</label>
+            </value>
+            <value>
+                <fullName>Walker Zanger</fullName>
+                <default>false</default>
+                <label>Walker Zanger</label>
+            </value>
+            <value>
+                <fullName>Waterjet</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Waterjet</label>
+            </value>
+            <value>
+                <fullName>Wow</fullName>
+                <default>false</default>
+                <label>Wow</label>
+            </value>
+            <value>
+                <fullName>Mosa</fullName>
+                <default>false</default>
+                <label>Mosa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

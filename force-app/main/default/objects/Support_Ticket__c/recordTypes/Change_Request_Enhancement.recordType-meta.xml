@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Request_Enhancement</fullName>
+    <active>true</active>
+    <label>Change Request / Enhancement</label>
+    <picklistValues>
+        <picklist>Affected_functionality__c</picklist>
+        <values>
+            <fullName>Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Vendor RPFs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report %26 Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Tickets</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CR_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved for deploy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deployed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inprogress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold by LT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for UAT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_type__c</picklist>
+        <values>
+            <fullName>Account Owner Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add vendors %26 series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Request Enhancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discontinue vendors %26 series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove duplicate opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Account Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deployed to Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moved to UAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ready For Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for user input</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Create New User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update User Details</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Resolution_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Resolution Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Selection Issue</fullName>
+                <default>false</default>
+                <label>Selection Issue</label>
+            </value>
+            <value>
+                <fullName>Vendor Issue</fullName>
+                <default>false</default>
+                <label>Vendor Issue</label>
+            </value>
+            <value>
+                <fullName>Installation Issue</fullName>
+                <default>false</default>
+                <label>Installation Issue</label>
+            </value>
+            <value>
+                <fullName>Louisville Tile Error</fullName>
+                <default>false</default>
+                <label>Louisville Tile Error</label>
+            </value>
+            <value>
+                <fullName>Non-Issue</fullName>
+                <default>false</default>
+                <label>Non-Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

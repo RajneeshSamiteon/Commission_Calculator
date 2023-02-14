@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Opportunity</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Email Opportunity</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>javascript:location.href=&apos;mailto:?SUBJECT=&apos;+document.title+&apos;&amp;BODY=&apos;+escape(location.href);</url>
+</WebLink>

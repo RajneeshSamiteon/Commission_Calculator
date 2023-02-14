@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Ceramic_Sales_to_Total_Sales__c</fullName>
+    <description>Field label changed per KF 1/19/2011</description>
+    <externalId>false</externalId>
+    <label>What Is Your % of Tile to Total Sales?</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

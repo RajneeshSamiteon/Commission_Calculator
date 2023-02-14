@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Time__c</fullName>
+    <description>This is the scheduled time of the appointment booked by online (Acuity) scheduling</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the scheduled time of the appointment booked by online (Acuity) scheduling</inlineHelpText>
+    <label>Appointment Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Time</type>
+</CustomField>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>LTD Cross Territory</fullName>
+                <default>false</default>
+                <label>LTD Cross Territory</label>
+            </value>
+            <value>
+                <fullName>Mixed Use</fullName>
+                <default>false</default>
+                <label>Mixed Use</label>
+            </value>
+            <value>
+                <fullName>National Account</fullName>
+                <default>false</default>
+                <label>National Account</label>
+            </value>
+            <value>
+                <fullName>Opportunity Buy</fullName>
+                <default>false</default>
+                <label>Opportunity Buy</label>
+            </value>
+            <value>
+                <fullName>Out of Territory</fullName>
+                <default>false</default>
+                <label>Out of Territory</label>
+            </value>
+            <value>
+                <fullName>Residential - New Construction</fullName>
+                <default>false</default>
+                <label>Residential - New Construction</label>
+            </value>
+            <value>
+                <fullName>Residential - Remodel</fullName>
+                <default>false</default>
+                <label>Residential - Remodel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

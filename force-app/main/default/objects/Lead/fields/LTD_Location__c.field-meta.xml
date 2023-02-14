@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTD_Location__c</fullName>
+    <description>Location address as entered in Acuity calendars. Used for formula field to display LTD Branch.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Location address as entered in Acuity calendars. Used for formula field to display LTD Branch.</inlineHelpText>
+    <label>LTD Location</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

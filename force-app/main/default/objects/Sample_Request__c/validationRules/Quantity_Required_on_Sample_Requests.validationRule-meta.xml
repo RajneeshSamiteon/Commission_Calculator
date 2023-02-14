@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_Required_on_Sample_Requests</fullName>
+    <active>true</active>
+    <errorConditionFormula>isblank (Quantity__c)</errorConditionFormula>
+    <errorMessage>Quantity is required for all sample requests</errorMessage>
+</ValidationRule>

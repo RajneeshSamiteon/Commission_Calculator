@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professional_Leads</fullName>
+    <columns>Lead_Name__c</columns>
+    <columns>Contact_Name__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Account_Cat__c</columns>
+    <columns>LEAD.RATING</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Preferred_method_of_contact__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.STATUS</columns>
+    <filterScope>Mine</filterScope>
+    <label>Professional Leads</label>
+</ListView>

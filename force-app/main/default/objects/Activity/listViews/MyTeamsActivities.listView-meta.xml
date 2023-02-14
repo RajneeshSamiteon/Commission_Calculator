@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyTeamsActivities</fullName>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>ACTIVITY.TASK</columns>
+    <columns>TASK.TYPE</columns>
+    <columns>TASK.SUBJECT</columns>
+    <columns>TASK.DUE_DATE</columns>
+    <filterScope>Team</filterScope>
+    <label>My Team&apos;s Activities</label>
+</ListView>

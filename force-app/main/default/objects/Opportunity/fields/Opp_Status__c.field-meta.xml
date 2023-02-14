@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(IsWon, &quot;Won&quot;,
+IF(IsClosed, &quot;Lost&quot;,
+&quot;Open&quot;))</formula>
+    <inlineHelpText>A read only forumla field calculated from the opportunity&apos;s STAGE, used for reporting purposes.</inlineHelpText>
+    <label>Opp Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

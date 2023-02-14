@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Display_Asset</fullName>
+    <availability>online</availability>
+    <description>Create a new Display Asset object from the Account Page</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Display Asset</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>https://na1.salesforce.com/a08/e?CF00N30000006DpbZ={!Account.Name}&amp;CF00N30000006DpbZ_lkid={!Account.Id}&amp;Name=&quot;SF Will Set&quot;&amp;retURL=/{!Account.Id}&amp;saveURL=/{!Account.Id}</url>
+</WebLink>

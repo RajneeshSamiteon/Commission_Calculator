@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Lost_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the most applicable reason the opportunity was lost, then use the &quot;Explanation for Lost Opportunity&quot; text box below to add any further information.</inlineHelpText>
+    <label>Reason for Lost Opportunity</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternates Not Accepted</fullName>
+                <default>false</default>
+                <label>Alternates Not Accepted</label>
+            </value>
+            <value>
+                <fullName>Competing Vendor Product</fullName>
+                <default>false</default>
+                <label>Competing Vendor Product</label>
+            </value>
+            <value>
+                <fullName>Competitor pricing</fullName>
+                <default>false</default>
+                <label>Competitor pricing</label>
+            </value>
+            <value>
+                <fullName>Contractor switched spec</fullName>
+                <default>false</default>
+                <label>Contractor switched spec</label>
+            </value>
+            <value>
+                <fullName>Contractor did not get the job</fullName>
+                <default>false</default>
+                <label>Contractor did not get the job</label>
+            </value>
+            <value>
+                <fullName>I don&apos;t know</fullName>
+                <default>false</default>
+                <label>I don&apos;t know</label>
+            </value>
+            <value>
+                <fullName>Product availability</fullName>
+                <default>false</default>
+                <label>Product availability</label>
+            </value>
+            <value>
+                <fullName>Purchased from other distributor</fullName>
+                <default>false</default>
+                <label>Purchased from other distributor</label>
+            </value>
+            <value>
+                <fullName>Out of Territory Specifier</fullName>
+                <default>false</default>
+                <label>Out of Territory Specifier</label>
+            </value>
+            <value>
+                <fullName>Tile taken off of job</fullName>
+                <default>false</default>
+                <label>Tile taken off of job</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Planning</controllingFieldValue>
+            <controllingFieldValue>Post Bidding</controllingFieldValue>
+            <controllingFieldValue>Sold</controllingFieldValue>
+            <controllingFieldValue>On Order</controllingFieldValue>
+            <valueName>I don&apos;t know</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

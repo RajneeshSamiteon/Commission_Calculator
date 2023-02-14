@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Application Status</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <label>In Review</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Submit For Approval</fullName>
+                <default>false</default>
+                <label>Submit For Approval</label>
+            </value>
+            <value>
+                <fullName>Sent To Customer</fullName>
+                <default>false</default>
+                <label>Sent To Customer</label>
+            </value>
+            <value>
+                <fullName>Opened By Customer</fullName>
+                <default>false</default>
+                <label>Opened By Customer</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Client Not Interested</fullName>
+                <default>false</default>
+                <label>Client Not Interested</label>
+            </value>
+            <value>
+                <fullName>Assigned AR Specialist</fullName>
+                <default>false</default>
+                <label>Assigned AR Specialist</label>
+            </value>
+            <value>
+                <fullName>AR Review Completed</fullName>
+                <default>false</default>
+                <label>AR Review Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

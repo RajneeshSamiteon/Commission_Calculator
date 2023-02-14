@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cazoomi__Marketing_List__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Marketing List</label>
+    <referenceTo>cazoomi__Marketing_List__c</referenceTo>
+    <relationshipLabel>List Members - Lead</relationshipLabel>
+    <relationshipName>List_Members_Lead</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

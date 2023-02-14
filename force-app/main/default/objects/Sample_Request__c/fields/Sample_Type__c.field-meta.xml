@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sample Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chip</fullName>
+                <default>false</default>
+                <label>Chip</label>
+            </value>
+            <value>
+                <fullName>Dealer Board</fullName>
+                <default>false</default>
+                <label>Dealer Board</label>
+            </value>
+            <value>
+                <fullName>Loose Piece</fullName>
+                <default>false</default>
+                <label>Loose Piece</label>
+            </value>
+            <value>
+                <fullName>SKI Board</fullName>
+                <default>false</default>
+                <label>SKI Board</label>
+            </value>
+            <value>
+                <fullName>Swatch</fullName>
+                <default>false</default>
+                <label>Swatch</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

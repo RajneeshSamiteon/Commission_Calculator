@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Availability__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Proposal details plan/commitment that 95% or better of orders will ship when promised  95% or better = 5 ; 85-94% = 4 ; 75-84% = 3 ; 65-74% =2 ; and anything lower = 1</inlineHelpText>
+    <label>Product Availability</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

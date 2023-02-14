@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Required_by_Stage</fullName>
+    <active>true</active>
+    <description>The Account (Customer Account) field is required once the project reaches the post bidding phase.</description>
+    <errorConditionFormula>$RecordType.Id = &quot;01230000000ZgOa&quot; &amp;&amp; 
+ISBLANK(AccountId) &amp;&amp; 
+(ISPICKVAL(StageName, &quot;Post Bidding&quot;) || ISPICKVAL(StageName, &quot;Sold&quot;) )</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Once the project enters Post Bidding, the Customer Account is required.</errorMessage>
+</ValidationRule>

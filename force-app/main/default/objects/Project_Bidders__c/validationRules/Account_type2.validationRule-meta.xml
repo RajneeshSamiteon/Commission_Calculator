@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_type2</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(OR(Opportunity__r.RecordType.DeveloperName=&apos;Commercial_Opportunities&apos;,Opportunity__r.RecordType.DeveloperName=&apos;National_Account_Build&apos;),(ISPICKVAL(Account__r.Account_Category__c,&apos;Contractor&apos;)))</errorConditionFormula>
+    <errorDisplayField>Account__c</errorDisplayField>
+    <errorMessage>Selected account is not a Contractor type account, please select a Contractor type account</errorMessage>
+</ValidationRule>
