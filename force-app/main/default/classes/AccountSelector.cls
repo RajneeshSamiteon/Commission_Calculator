@@ -11,7 +11,7 @@ public without sharing class AccountSelector {
                                     Industry_Focus__c FROM Account WHERE Id IN :ids]);
     }
     public static List<Account> getAccountById(Set<Id> ids){
-        return [SELECT Id,OwnerId,Name,Account_Category__c,AccountNumber,Phone,Email__c,BillingStreet, BillingCity, BillingState, BillingPostalCode, BillingCountry  FROM Account WHERE Id IN :ids];
+        return [SELECT Id,OwnerId,Owner.Profile.Name,Name,Account_Category__c,AccountNumber,Phone,Email__c,BillingStreet, BillingCity, BillingState, BillingPostalCode, BillingCountry  FROM Account WHERE Id IN :ids];
     }
     public static List<Account> getAccountCreatedInMonthByUser(){
         Date startOfMonth = Date.today().toStartOfMonth();

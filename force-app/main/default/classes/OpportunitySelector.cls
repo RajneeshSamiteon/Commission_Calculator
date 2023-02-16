@@ -5,7 +5,7 @@ public class OpportunitySelector {
                 	Creator_Name__c,Amount,Opportunity.owner.Name,Owner.Email,
                 	Project_Name__c,City__c,State__c,CloseDate,StageName,
                 	Estimated_Cost_per_Location__c,Project_Registration__c,
-                	Register_Job_Send_Email__c,RecordType.id	
+                	Register_Job_Send_Email__c,RecordType.id,owner.profile.name	
                 From Opportunity 
                 Where Id IN:ids];
     }

@@ -1,6 +1,6 @@
 public class OpportunitySplitSelector {
     public static List<OpportunitySplit> getOpportunitySplitByOpportunity(set<Id> ids){
-        return [SELECT Id,SplitPercentage,SplitOwnerId,OpportunityId,Opportunity.OwnerId FROM OpportunitySplit WHERE OpportunityId IN: ids];
+        return [SELECT Id,SplitPercentage,SplitOwnerId,OpportunityId,Opportunity.OwnerId,SplitOwner.Profile.Name FROM OpportunitySplit WHERE OpportunityId IN: ids];
     }
     public static List<OpportunitySplit> getOpportunitySplitByOpportunityTeamIds(Set<Id> ids){
         return [SELECT Id,SplitPercentage,SplitOwnerId,OpportunityId,OpportunityTeam_Id__c FROM OpportunitySplit WHERE OpportunityTeam_Id__c IN: ids];
