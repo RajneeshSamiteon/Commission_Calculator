@@ -1,19 +1,19 @@
-public with sharing class InvoiceDetailTriggerHelper {
+public class InvoiceDetailTriggerHelper {
     
     /************************************************
 
-    => we'll be segregating our data and passing them 
-    to different methods.  
-    
-    => EvaluatedInvoicesByOpportunity map stores 
-    all the sagregated invoice commission bases 
-    on opportunity owner
-    
-    => EvaluatedInvoicesByAccount map stores all 
-    the sagregated invoice commission bases on 
-    account owner
+=> we'll be segregating our data and passing them 
+to different methods.  
 
-    *************************************************/
+=> EvaluatedInvoicesByOpportunity map stores 
+all the sagregated invoice commission bases 
+on opportunity owner
+
+=> EvaluatedInvoicesByAccount map stores all 
+the sagregated invoice commission bases on 
+account owner
+
+*************************************************/
     
     Map<String,Map<Id,InvoiceMargins>> calculatedMarginsByOpportunityIdByMonth = New Map<String,Map<Id,InvoiceMargins>>();
     Map<String,Map<Id,InvoiceMargins>> calculatedMarginsByAccountIdByMonth = New Map<String,Map<Id,InvoiceMargins>>();
@@ -23,17 +23,31 @@ public with sharing class InvoiceDetailTriggerHelper {
     Set<id> accountIds = new Set<id>();
     
     
-    public void commissionCalculator(List<invoice_detail__c> invoicesDetails)
-    {
-        List<Monthly_Commission__c> monthlyCommissions = new List<Monthly_Commission__c>();
+    public void commissionCalculator(List<Invoice_detail__c> invoicesDetails)
+    {        
+        Map<Id,Monthly_Commission__c> monthlyCommissionsById = new Map<Id,Monthly_Commission__c>();      
+        Map<id ,monthly_breakdown__c> monthlyBreakDown = new Map<id ,monthly_breakdown__c>();
         populateCommissionMarginsSchema(invoicesDetails);
         populateSplitsSchema();
-        monthlyCommissions = getMonthlyCommissionViaNameAndEmployee();
-        
+        monthlyCommissionsById = getMonthlyCommissionViaNameAndEmployee();
+        monthlyBreakDown = getMonthlyBreakDownViaMonthlyCommission(monthlyCommissionsById.keyset());
+        /// looping the SplitByOpportunity Map to call different method for further calclation now at profile level
+        for(String profileName : splitsByOpportunityIdByProfileName.keySet()){
+            if(profileName == 'Sales Rep A&D')
+            {
+                UpateMonthlyBreakdownByUserProfile.updateMonthlyBreakdownForAandD(splitsByOpportunityIdByProfileName.get(profileName) ,calculatedMarginsByOpportunityIdByMonth );
+            }
+            //UpateMonthlyBreakdownByUserProfile
+        }
+
+
     }
-    public void populateCommissionMarginsSchema(List<invoice_detail__c> invoicesDetails){
-        System.debug('Entring:populateCommissionMarginsSchema');
-        for(invoice_detail__c invoiceDetail : invoicesDetails)
+    public Map<id ,monthly_breakdown__c> getMonthlyBreakDownViaMonthlyCommission(Set<id> monthlyCommissions){
+        return (MonthlyBreakDownSelector.getMonthlyBreakDownViaMonthlyCommission(monthlyCommissions));
+    }
+    public void populateCommissionMarginsSchema(List<Invoice_detail__c> invoicesDetails){
+        System.debug('Entring:populateCommissionMarginsSchem => invoicesDetails'+invoicesDetails);
+        for(Invoice_detail__c invoiceDetail : invoicesDetails)
         {
             String invoiceMonthAndYear = CommissionCalculatorConstants.MONTHBYNUMBER.get(InvoiceDetail.Invoice_Date__c.month())+ '-'+ String.valueOf(invoiceDetail.Invoice_Date__c.year());
             if(invoiceDetail.Opportunity__c != null)
@@ -43,14 +57,14 @@ public with sharing class InvoiceDetailTriggerHelper {
                     if(this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).containsKey(invoiceDetail.Opportunity__c))
                     {
                         this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).put(invoiceDetail.Opportunity__c,
-                                                                                                      this.calucluateInvoiceMargins(this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).get(invoiceDetail.Opportunity__c),
-                                                                                                                                    invoiceDetail));    
+                                                                                                  this.calucluateInvoiceMargins(this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).get(invoiceDetail.Opportunity__c),
+                                                                                                                                invoiceDetail));    
                     }
                     else {
                         this.opportunityIds.add(invoiceDetail.Opportunity__c);
                         this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).put(invoiceDetail.Opportunity__c,
-                                                                                                      this.calucluateInvoiceMargins(New InvoiceMargins(),
-                                                                                                                                    invoiceDetail));    
+                                                                                                  this.calucluateInvoiceMargins(New InvoiceMargins(),
+                                                                                                                                invoiceDetail));    
                     }
                 }
                 else {
@@ -67,14 +81,14 @@ public with sharing class InvoiceDetailTriggerHelper {
                     if(this.calculatedMarginsByAccountIdByMonth.get(invoiceMonthAndYear).containsKey(invoiceDetail.Account__c))
                     {
                         this.calculatedMarginsByAccountIdByMonth.get(invoiceMonthAndYear).put(invoiceDetail.Account__c,
-                                                                                                  this.calucluateInvoiceMargins(this.calculatedMarginsByAccountIdByMonth.get(invoiceMonthAndYear).get(invoiceDetail.Account__c),
-                                                                                                                                invoiceDetail));    
+                                                                                              this.calucluateInvoiceMargins(this.calculatedMarginsByAccountIdByMonth.get(invoiceMonthAndYear).get(invoiceDetail.Account__c),
+                                                                                                                            invoiceDetail));    
                     }
                     else {
                         this.accountIds.add(invoiceDetail.Account__c);
                         this.calculatedMarginsByAccountIdByMonth.get(invoiceMonthAndYear).put(invoiceDetail.Account__c,
-                                                                                                  this.calucluateInvoiceMargins(New InvoiceMargins(),
-                                                                                                                                invoiceDetail));    
+                                                                                              this.calucluateInvoiceMargins(New InvoiceMargins(),
+                                                                                                                            invoiceDetail));    
                     }
                 }
                 else {
@@ -90,8 +104,20 @@ public with sharing class InvoiceDetailTriggerHelper {
                      this.calculatedMarginsByAccountIdByMonth);
     }
     
-    public InvoiceMargins calucluateInvoiceMargins(InvoiceMargins preEvaluatedInvoice , Invoice_Detail__c invoiceDetail){	
+    public InvoiceMargins calucluateInvoiceMargins(InvoiceMargins preEvaluatedInvoice , Invoice_detail__c invoiceDetail){	
         preEvaluatedInvoice.totalSales += invoiceDetail.Item_Price__c;
+        if(invoiceDetail.opportunity__c == NULL)
+        {
+            preEvaluatedInvoice.accountId = invoiceDetail.Account__c;
+        }
+        else
+        {
+            preEvaluatedInvoice.opportunity__c = invoiceDetail.Opportunity__c;
+            if(preEvaluatedInvoice.accountId != NULL)
+            {
+                preEvaluatedInvoice.accountId = invoiceDetail.Account__c;
+            }
+        }
         if(invoiceDetail.Item_Group__c == commissionCalculatorconstants.itemGroupTile)
         {
             preEvaluatedInvoice.tileSales += invoiceDetail.Item_Price__c;
@@ -176,7 +202,7 @@ public with sharing class InvoiceDetailTriggerHelper {
                      this.splitsByAccountIdByProfileName);
     }
     
-    public List<Monthly_Commission__c> getMonthlyCommissionViaNameAndEmployee(){
+    public Map<Id,Monthly_Commission__c> getMonthlyCommissionViaNameAndEmployee(){
         System.debug('Entering:getMonthlyCommissionViaNameAndEmployee');
         String query = 'SELECT Id, Name, Employee__c, EoY_Sales_Commission__c, Tile_Margin__c, Tile_Margin_Percent__c, Target_Met__c, Price__c, Not_Elligible_Margin__c, Month__c, Margin__c, Eligible_Margin__c, Date__c, Cost__c, Ancillary_Margin__c, Ancillary_Margin_Percent__c FROM Monthly_Commission__c';
         String whereClause = ' WHERE Name Like \'%';
@@ -192,12 +218,13 @@ public with sharing class InvoiceDetailTriggerHelper {
         query += whereClause;
         system.debug('query::'+query);
         List<Monthly_Commission__c> monthlyCommissionViaNameAndEmployee = Database.query(query);
-        system.debug('Exit:getMonthlyCommissionViaNameAndEmployee => monthlyCommissionViaNameAndEmployee:'+monthlyCommissionViaNameAndEmployee); 
-        return monthlyCommissionViaNameAndEmployee;
+        Map<Id,Monthly_Commission__c> monthlyCommissionById = new Map<Id,Monthly_Commission__c>(monthlyCommissionViaNameAndEmployee);
+        system.debug('Exit:getMonthlyCommissionViaNameAndEmployee => monthlyCommissionById:'+monthlyCommissionById); 
+        return monthlyCommissionById;
     }
     
     public Set<id> getUserIdsFromSchema(List<Map<Id,list<SplitDetails>>> splitDetailsById,Set<id> userIds){
-	System.debug('Entering:getUserIdsFromSchema => splitDetailsById::'+splitDetailsById+'\n userIds::'+userIds);
+        System.debug('Entering:getUserIdsFromSchema => splitDetailsById::'+splitDetailsById+'\n userIds::'+userIds);
         for(Map<Id,list<SplitDetails>> splitDetailById :splitDetailsById){
             for(SplitDetails detail: splitDetailById.values()[0]){
                 userIds.add(detail.ownerId);
@@ -215,6 +242,7 @@ public with sharing class InvoiceDetailTriggerHelper {
         public Decimal ancillaryMargin;
         public Decimal tileMarginPercentage;
         public Decimal ancillaryMarginPercentage;
+        public Decimal totalMargin;
         
         
         public invoiceMargins(){
@@ -225,20 +253,22 @@ public with sharing class InvoiceDetailTriggerHelper {
             ancillaryMargin = 0;
             tileMarginPercentage = 0;
             ancillaryMarginPercentage = 0;
+            totalMargin = 0;
         }
         
         public invoiceMargins(Decimal totalSales, Decimal tileSales, Decimal ancillarySales, Decimal tileMargin,
-                              Decimal ancillaryMargin, Decimal tileMarginPercentage, Decimal ancillaryMarginPercentage){
+                              Decimal ancillaryMargin, Decimal tileMarginPercentage, Decimal ancillaryMarginPercentage,
+                              Decimal totalMargin){
                                   this.totalSales =totalSales;
                                   this.tileSales =tileSales;
                                   this.ancillarySales =ancillarySales;
                                   this.tileMargin =tileMargin;
                                   this.ancillaryMargin =ancillaryMargin;
                                   this.tileMarginPercentage =tileMarginPercentage;
-                                  this.ancillaryMarginPercentage =ancillaryMarginPercentage;                              
+                                  this.ancillaryMarginPercentage =ancillaryMarginPercentage;
+                                  this.totalMargin = totalMargin;                              
                               }
     }
-    
     Public class SplitDetails{
         Public Id ownerId;
         Public String ownerProfile;
