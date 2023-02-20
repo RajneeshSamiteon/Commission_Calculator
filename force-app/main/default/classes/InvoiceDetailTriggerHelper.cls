@@ -19,6 +19,9 @@ account owner
     Map<String,Map<Id,InvoiceMargins>> calculatedMarginsByAccountIdByMonth = New Map<String,Map<Id,InvoiceMargins>>();
     Map<string,Map<Id,list<SplitDetails>>> splitsByOpportunityIdByProfileName = New Map<string,Map<Id,list<SplitDetails>>>();
     Map<string,Map<Id,list<SplitDetails>>> splitsByAccountIdByProfileName = New Map<string,Map<Id,list<SplitDetails>>>();
+
+    Map<id,list<monthly_breakdown__c>> monthlyBreakDownsByOpportunity = New Map<string,list<monthly_breakdown__c>>();
+    Map<id,list<monthly_breakdown__c>> monthlyBreakDownsByAccount = New Map<string,list<monthly_breakdown__c>>();
     Set<id> opportunityIds = new Set<id>();
     Set<id> accountIds = new Set<id>();
     
@@ -37,13 +40,32 @@ account owner
             {
                 UpateMonthlyBreakdownByUserProfile.updateMonthlyBreakdownForAandD(splitsByOpportunityIdByProfileName.get(profileName) ,calculatedMarginsByOpportunityIdByMonth );
             }
-            //UpateMonthlyBreakdownByUserProfile
         }
-
-
     }
-    public Map<id ,monthly_breakdown__c> getMonthlyBreakDownViaMonthlyCommission(Set<id> monthlyCommissions){
-        return (MonthlyBreakDownSelector.getMonthlyBreakDownViaMonthlyCommission(monthlyCommissions));
+    public void getMonthlyBreakDownViaMonthlyCommission(Set<id> monthlyCommissions){
+        for(monthly_break_down__c beakDowm :MonthlyBreakDownSelector.getMonthlyBreakDownViaMonthlyCommission(monthlyCommissions).values());{
+            if(beakDowm.opportunity__c != null)
+            {
+                if(this.monthlyBreakDownsByOpportunity.containsKey(beakDowm.opportunity__c))
+                {
+                    this.monthlyBreakDownsByOpportunity.put(beakDowm.opportunity__c , this.monthlyBreakDownsByOpportunity.get(beakDowm.opportunity__c).add(beakDowm));
+                }
+                else {
+                    this.monthlyBreakDownsByOpportunity.put(beakDowm.opportunity__c ,  new list<monthly_breakdown__c>{beakDowm});
+                }
+                
+            }
+            else
+            {
+                if(this.monthlyBreakDownsByAccount.containsKey(beakDowm.Account__c))
+                {
+                    this.monthlyBreakDownsByAccount.put(beakDowm.Account__c , this.monthlyBreakDownsByAccount.get(beakDowm.Account__c).add(beakDowm));
+                }
+                else {
+                    this.monthlyBreakDownsByAccount.put(beakDowm.Account__c ,  new list<monthly_breakdown__c>{beakDowm});
+                }
+            }
+        }
     }
     public void populateCommissionMarginsSchema(List<Invoice_detail__c> invoicesDetails){
         System.debug('Entring:populateCommissionMarginsSchem => invoicesDetails'+invoicesDetails);
@@ -141,17 +163,17 @@ account owner
             {
                 if(this.splitsByOpportunityIdByProfileName.get(split.SplitOwner.Profile.Name).containsKey(split.opportunityId))
                 {
-                    this.splitsByOpportunityIdByProfileName.get(split.SplitOwner.Profile.Name).get(split.opportunityId).add(New SplitDetails(split.SplitOwnerId,split.SplitOwner.Profile.Name,split.SplitPercentage));   
+                    this.splitsByOpportunityIdByProfileName.get(split.SplitOwner.Profile.Name).get(split.opportunityId).add(New SplitDetails(split.SplitOwnerId,split.SplitOwner.Profile.Name,0,split.SplitPercentage));   
                 }
                 else {
                     this.splitsByOpportunityIdByProfileName.get(split.SplitOwner.Profile.Name)
-                        .put(split.opportunityId ,New List<SplitDetails>{new SplitDetails(split.SplitOwnerId,split.SplitOwner.Profile.Name,split.SplitPercentage)});   
+                        .put(split.opportunityId ,New List<SplitDetails>{new SplitDetails(split.SplitOwnerId,split.SplitOwner.Profile.Name,0,split.SplitPercentage)});   
                 }
             }
             else {
                 this.splitsByOpportunityIdByProfileName.put(split.SplitOwner.Profile.Name ,
                                                             new map<id,list<SplitDetails>>{split.OpportunityId => 
-                                                                New List<SplitDetails>{New SplitDetails(split.SplitOwnerId,split.SplitOwner.Profile.Name,split.SplitPercentage)}});
+                                                                New List<SplitDetails>{New SplitDetails(split.SplitOwnerId,split.SplitOwner.Profile.Name,0,split.SplitPercentage)}});
             }
             oppotunityIdsToBeRemovedFromOpportunityIds.add(split.opportunityId);
         }
@@ -167,16 +189,16 @@ account owner
         for(Opportunity opportunity :OpportunitySelector.getOpportunitiesById(this.opportunityIds)){
             if(this.splitsByOpportunityIdByProfileName.containsKey(opportunity.owner.profile.Name)){
                 if(this.splitsByOpportunityIdByProfileName.get(opportunity.owner.profile.Name).containsKey(opportunity.id)){
-                    this.splitsByOpportunityIdByProfileName.get(opportunity.owner.profile.Name).get(opportunity.id).add(New SplitDetails(opportunity.OwnerId,opportunity.owner.profile.name,CommissionCalculatorConstants.MARGINPERCENTFOROPPWITHNOSPLITS));   
+                    this.splitsByOpportunityIdByProfileName.get(opportunity.owner.profile.Name).get(opportunity.id).add(New SplitDetails(opportunity.OwnerId,opportunity.owner.profile.name,0,CommissionCalculatorConstants.MARGINPERCENTFOROPPWITHNOSPLITS));   
                 } 
                 else{
                     this.splitsByOpportunityIdByProfileName.get(opportunity.owner.profile.Name)
-                        .put(opportunity.id ,New List<SplitDetails> {new SplitDetails(opportunity.OwnerId,opportunity.owner.profile.name,CommissionCalculatorConstants.MARGINPERCENTFOROPPWITHNOSPLITS)});   
+                        .put(opportunity.id ,New List<SplitDetails> {new SplitDetails(opportunity.OwnerId,opportunity.owner.profile.name ,0,CommissionCalculatorConstants.MARGINPERCENTFOROPPWITHNOSPLITS)});   
                 }
             }
             else {
                 this.splitsByOpportunityIdByProfileName
-                    .put(opportunity.owner.profile.Name ,new map<id,list<SplitDetails>>{opportunity.id => New List<SplitDetails>{New SplitDetails(opportunity.OwnerId,opportunity.owner.profile.name,CommissionCalculatorConstants.MARGINPERCENTFOROPPWITHNOSPLITS)}});
+                    .put(opportunity.owner.profile.Name ,new map<id,list<SplitDetails>>{opportunity.id => New List<SplitDetails>{New SplitDetails(opportunity.OwnerId,opportunity.owner.profile.name,0,CommissionCalculatorConstants.MARGINPERCENTFOROPPWITHNOSPLITS)}});
             }
         }
         System.debug('Exit:updateSplitsByOpportunityIdByProfileNameWithRemainingOpportunities');
@@ -187,15 +209,15 @@ account owner
         for(Account account : AccountSelector.getAccountById(this.accountIds)){
             if(this.splitsByAccountIdByProfileName.containsKey(account.Owner.Profile.Name)){
                 if(this.splitsByAccountIdByProfileName.get(account.Owner.Profile.Name).containsKey(account.id)){
-                    this.splitsByAccountIdByProfileName.get(account.Owner.Profile.Name).get(account.id).add(New SplitDetails(account.OwnerId,account.Owner.Profile.Name,CommissionCalculatorConstants.MARGINPERCENTFORACCOUNTS));   
+                    this.splitsByAccountIdByProfileName.get(account.Owner.Profile.Name).get(account.id).add(New SplitDetails(account.OwnerId,account.Owner.Profile.Name,0,CommissionCalculatorConstants.MARGINPERCENTFORACCOUNTS));   
                 } 
                 else{
                     this.splitsByAccountIdByProfileName.get(account.Owner.Profile.Name)
-                        .put(account.id ,New  List<SplitDetails> {new SplitDetails(account.OwnerId,account.Owner.Profile.Name,CommissionCalculatorConstants.MARGINPERCENTFORACCOUNTS)});   
+                        .put(account.id ,New  List<SplitDetails> {new SplitDetails(account.OwnerId,account.Owner.Profile.Name ,0,CommissionCalculatorConstants.MARGINPERCENTFORACCOUNTS)});   
                 }
             }
             else {
-                this.splitsByAccountIdByProfileName.put(account.Owner.Profile.Name ,new map<id,list<SplitDetails>>{account.id => New List<SplitDetails>{New SplitDetails(account.OwnerId,account.Owner.Profile.Name,CommissionCalculatorConstants.MARGINPERCENTFORACCOUNTS)}});
+                this.splitsByAccountIdByProfileName.put(account.Owner.Profile.Name ,new map<id,list<SplitDetails>>{account.id => New List<SplitDetails>{New SplitDetails(account.OwnerId,account.Owner.Profile.Name,0,CommissionCalculatorConstants.MARGINPERCENTFORACCOUNTS)}});
             }
         }
         System.debug('Exit:updateSplitsByAccountIdByProfileName =>  splitsByAccountIdByProfileName::'+
@@ -273,10 +295,12 @@ account owner
         Public Id ownerId;
         Public String ownerProfile;
         Public Decimal split;
-        Public SplitDetails(Id ownerId,String ownerProfile,Decimal split){
+        Public Decimal payableAmount;
+        Public SplitDetails(Id ownerId,String ownerProfile,Decimal split , Decimal payableAmount){
             this.ownerId = ownerId;
             this.ownerProfile = ownerProfile;
             this.split = split;
+            this.payableAmount = payableAmount;
         }
     }
 }
