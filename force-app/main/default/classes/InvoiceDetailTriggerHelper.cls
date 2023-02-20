@@ -29,7 +29,7 @@ public class InvoiceDetailTriggerHelper {
     
     public void commissionCalculator(List<Invoice_detail__c> invoicesDetails)
     {        
-        Integer i=0;
+        Integer counterFlag=0;
         Integer monthlyBreakdownsSize = 0;   
         populateCommissionMarginsSchema(invoicesDetails);
         populateSplitsSchema();
@@ -39,7 +39,7 @@ public class InvoiceDetailTriggerHelper {
         for(String profileName : this.splitsByOpportunityIdByProfileName.keySet()){
             if(profileName == CommissionCalculatorConstants.REPTYPEAD)
             {
-                populateMonthlyBreakdownsToBeUpsertedForAnD(this.splitsByOpportunityIdByProfileName.get(profileName),i,monthlyBreakdownsSize);
+                populateMonthlyBreakdownsToBeUpsertedForAnD(this.splitsByOpportunityIdByProfileName.get(profileName),counterFlag,monthlyBreakdownsSize);
             }
         }
         
@@ -263,12 +263,12 @@ public class InvoiceDetailTriggerHelper {
      * Monthly Commissions and Monthly Breakdowns. If Breakdown exists then it'll
      * be updated with new data and if not it'll create a new breakdown
      */
-    public void populateMonthlyBreakdownsToBeUpsertedForAnD(Map<Id,List<SplitDetails>> splitsbyOppportunity, Integer  i, Integer monthlyBreakdownsSize) {
+    public void populateMonthlyBreakdownsToBeUpsertedForAnD(Map<Id,List<SplitDetails>> splitsbyOppportunity, Integer  counterFlag, Integer monthlyBreakdownsSize) {
         System.debug('Entering:populateMonthlyBreakdownsToBeUpsertedForAnD => splitsbyOppportunity::'+splitsbyOppportunity);
-        for(id opportunityId : splitsbyOppportunity.keySet()){
-            for(string invoiceMonthAndYear : this.calculatedMarginsByOpportunityIdByMonth.keySet()){
+        for(Id opportunityId : splitsbyOppportunity.keySet()){
+            for(String invoiceMonthAndYear : this.calculatedMarginsByOpportunityIdByMonth.keySet()){
                 if(this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).containsKey(opportunityId)){
-                    setupCalculationRelatedDataForMonthlyBreakdown(opportunityId,invoiceMonthAndYear,splitsbyOppportunity,i,monthlyBreakdownsSize);
+                    setupCalculationRelatedDataForMonthlyBreakdown(opportunityId,invoiceMonthAndYear,splitsbyOppportunity,counterFlag,monthlyBreakdownsSize);
                 }
             }
         }
@@ -276,24 +276,23 @@ public class InvoiceDetailTriggerHelper {
                      JSON.serializePretty(this.monthlyBreakdownsToBeUpserted));
     }
     
-    public void setupCalculationRelatedDataForMonthlyBreakdown(id opportunityId, String invoiceMonthAndYear, Map<Id,List<SplitDetails>> splitsbyOppportunity,
-                                                                Integer i, Integer monthlyBreakdownsSize){
+    public void setupCalculationRelatedDataForMonthlyBreakdown(Id opportunityId, String invoiceMonthAndYear, Map<Id,List<SplitDetails>> splitsbyOppportunity,
+                                                                Integer counterFlag, Integer monthlyBreakdownsSize){
         InvoiceMargins invoiceMargin = new InvoiceMargins(this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).get(opportunityId));
-        //calculateCommissionForSalesRepAandD(this.calculatedMarginsByOpportunityIdByMonth.get(invoiceMonthAndYear).get(opportunityId) , splitsbyOppportunity.get(opportunityId));
         for(SplitDetails splitDetail : splitsbyOppportunity.get(opportunityId)){
-            if(this.monthlyBreakDownsByOpportunity.containsKey(opportunityId)){
-                i=0;
-                monthlyBreakdownsSize = this.monthlyBreakDownsByOpportunity.get(opportunityId).size();
-                for(Monthly_Breakdown__c breakDown : this.monthlyBreakDownsByOpportunity.get(opportunityId)){
-                    if(breakDown.monthly_commission__r.Employee__c == splitDetail.ownerId && 
-                       breakDown.monthly_commission__r.name.contains(invoiceMonthAndYear) && 
-                       breakDown.opportunity__c == opportunityId){
-                        updateExistingMonthlyBreakdown(breakDown,invoiceMargin,splitDetail.split);
+            if(this.monthlyBreakdownsByOpportunity.containsKey(opportunityId)){
+                counterFlag=0;
+                monthlyBreakdownsSize = this.monthlyBreakdownsByOpportunity.get(opportunityId).size();
+                for(Monthly_Breakdown__c breakdown : this.monthlyBreakdownsByOpportunity.get(opportunityId)){
+                    if(breakdown.Monthly_Commission__r.Employee__c == splitDetail.ownerId && 
+                       breakdown.Monthly_Commission__r.Name.contains(invoiceMonthAndYear) && 
+                       breakdown.Opportunity__c == opportunityId){
+                        updateExistingMonthlyBreakdown(breakdown,invoiceMargin,splitDetail.split);
                         break; 
                     }
-                    i++;
+                    counterFlag++;
                 }
-                if(i == monthlyBreakdownsSize){
+                if(counterFlag == monthlyBreakdownsSize){
                     updateMonthlyBreakdownsToBeUpsertedWithNewBreakdown(opportunityId, splitDetail.ownerId, splitDetail.split, invoiceMonthAndYear,invoiceMargin);
                 }
             }
@@ -304,7 +303,7 @@ public class InvoiceDetailTriggerHelper {
         }
     }
     
-    public void updateExistingMonthlyBreakdown(Monthly_Breakdown__c monthlyBreakdown, InvoiceMargins invoiceMargin,Decimal splitPercentage){
+    public void updateExistingMonthlyBreakdown(Monthly_Breakdown__c monthlyBreakdown, InvoiceMargins invoiceMargin, Decimal splitPercentage){
         monthlyBreakdown.Total_sales__c += invoiceMargin.totalSales;
         monthlyBreakdown.Tile_Sale__c += invoiceMargin.tileSales;
         monthlyBreakdown.ancillary_sale__c += invoiceMargin.ancillarySales;
@@ -340,10 +339,10 @@ public class InvoiceDetailTriggerHelper {
     public void updateMonthlyBreakdownsToBeUpsertedWithNewBreakdown(Id opportunityId, Id splitOwnerId,Decimal splitPercentage, String invoiceMonthAndYear, InvoiceMargins invoiceMargin){
         Monthly_Breakdown__c monthlyBreakdown = new Monthly_Breakdown__c();
         monthlyBreakdown.opportunity__c = opportunityId;
-        monthlyBreakdown.monthly_commission__c = getMonthlyCommissionViaSplitOwnerIdAndInvoiceDate(splitOwnerId, invoiceMonthAndYear);
-        monthlyBreakdown.Total_sales__c = invoiceMargin.totalSales;
+        monthlyBreakdown.Monthly_Commission__c = getMonthlyCommissionViaSplitOwnerIdAndInvoiceDate(splitOwnerId, invoiceMonthAndYear);
+        monthlyBreakdown.Total_Sales__c = invoiceMargin.totalSales;
         monthlyBreakdown.Tile_Sale__c = invoiceMargin.tileSales;
-        monthlyBreakdown.ancillary_sale__c = invoiceMargin.ancillarySales;
+        monthlyBreakdown.Ancillary_Sale__c = invoiceMargin.ancillarySales;
         monthlyBreakdown.Tile_Margin__c  =invoiceMargin.tileMargin;
         monthlyBreakdown.Ancillary_Margin__c = invoiceMargin.ancillaryMargin;
         monthlyBreakdown.Commission_Split_Percentage__c  = splitPercentage;
