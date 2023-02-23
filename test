@@ -1,0 +1,65 @@
+public void populateMonthlyBreakdownsByMonthlyCommissionByProfile(Set<Id> monthlyCommissions){
+        System.debug('Entering:populateMonthlyBreakdownsByMonthlyCommissionByProfile => monthlyCommissions::'+monthlyCommissions); //monthlyCommissionByProfileName
+        for(Monthly_Breakdown__c breakdown : monthlyBreakDownSelector.getMonthlyBreakDownByMonthlyCommission(monthlyCommissions)){
+
+            if(monthlyCommissionByProfileName.containsKey(breakdown.monthly_commission__r.employee__r.profile.name)){
+
+                if((monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).containsKey(breakdown.monthly_commission__c)))
+                {
+                    monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Tile_Margin__c += breakdown.Tile_Margin__c;
+                    monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Ancillary_Margin__c += breakdown.Ancillary_Margin__c;
+                    
+                    monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Tile_Margin_Percentage__c = (monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Tile_Margin_Percentage__c+breakdown.Tile_Margin_Percentage__c)/100;
+                    monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Ancillary_Margin_Percentage__c = (monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Ancillary_Margin_Percentage__c+breakdown.Ancillary_Margin_Percentage__c)/100;
+
+                    if(monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Tile_Margin_Percentage__c >= 33.0 && monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Ancillary_Margin_Percentage__c >= 28.0)
+                    {
+                        monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).targer_met__c = true;
+                    }
+                    else {
+                        monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).targer_met__c = false;
+                    }
+                    monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).Eligible_margin__c += breakdown.Eligible_Acount__c;
+                }
+                else {
+                    Monthly_Commission__c monthlyCommission = new Monthly_Commission__c();
+                    monthlyCommission.id  = breakdown.mothly_commission__c;
+                    monthlyCommission.Tile_Margin__c = breakdown.Tile_Margin__c;
+                    monthlyCommission.Ancillary_Margin__c = breakdown.Ancillary_Margin__c;
+                    monthlyCommission.Tile_Margin_Percentage__c = breakdown.Tile_Margin_Percentage__c;
+                    monthlyCommission.Ancillary_Margin_Percentage__c = breakdown.Ancillary_Margin_Percentage__c;
+                    if(breakdown.Tile_Margin_Percentage__c >= 33.0 && breakdown.Ancillary_Margin_Percentage__c >=28.0)
+                    {
+                        monthlyCommission.targer_met__c= true;
+                    }
+                    else {
+                        monthlyCommission.targer_met__c= false;
+                    }
+                    monthlyCommission.Eligible_margin__c = breakdown.Eligible_Acount__c;
+                    monthlyCommissionByProfileName.get(breakdown.monthly_commission__r.employee__r.profile.name).put(breakdown.mothly_commission__c , monthlyCommission);
+                }
+
+
+            }
+            else {
+                Monthly_Commission__c monthlyCommission = new Monthly_Commission__c();
+                monthlyCommission.id  = breakdown.mothly_commission__c;
+                monthlyCommission.Tile_Margin__c = breakdown.Tile_Margin__c;
+                monthlyCommission.Ancillary_Margin__c = breakdown.Ancillary_Margin__c;
+                monthlyCommission.Tile_Margin_Percentage__c = breakdown.Tile_Margin_Percentage__c;
+                monthlyCommission.Ancillary_Margin_Percentage__c = breakdown.Ancillary_Margin_Percentage__c;
+                if(breakdown.Tile_Margin_Percentage__c >= 33.0 && breakdown.Ancillary_Margin_Percentage__c >=28.0)
+                {
+                    monthlyCommission.targer_met__c= true;
+                }
+                else {
+                    monthlyCommission.targer_met__c= false;
+                }
+                monthlyCommission.Eligible_margin__c = breakdown.Eligible_Acount__c;
+                monthlyCommissionByProfileName.put(breakdown.monthly_commission__r.employee__r.profile.name , new  Map<Id,Monthly_Commission__c> {breakdown.monthly_commission__c =>monthlyCommission});
+            }
+
+       }
+       System.debug('Exit:populateMonthlyBreakdownsByMonthlyCommissionByProfile =>  monthlyBreakdownsByMonthlyCommissionByProfile::'+
+                     this.monthlyBreakdownsByMonthlyCommissionByProfile);
+    }
