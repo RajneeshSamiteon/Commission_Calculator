@@ -5,9 +5,19 @@ public class OpportunitySelector {
                 	Creator_Name__c,Amount,Opportunity.owner.Name,Owner.Email,
                 	Project_Name__c,City__c,State__c,CloseDate,StageName,
                 	Estimated_Cost_per_Location__c,Project_Registration__c,
-                	Register_Job_Send_Email__c,RecordType.id,owner.profile.name	
+                	Register_Job_Send_Email__c,RecordType.id,Owner.Profile.Name	
                 From Opportunity 
                 Where Id IN:ids];
+    }
+    
+    public static List<Opportunity> getOpportunitiesByIdWithCalculateCommissionEnable(Set<Id> ids){
+        return [Select Id,NA_Project__c,AccountId,Inactive_Product_Alert__c,OwnerId,Name,Opportunity_ID_for_Kerridge__c,opportunity.owner.Dont_calculate_commission__c,
+                	Creator_Name__c,Amount,Opportunity.owner.Name,Owner.Email,
+                	Project_Name__c,City__c,State__c,CloseDate,StageName,
+                	Estimated_Cost_per_Location__c,Project_Registration__c,
+                	Register_Job_Send_Email__c,RecordType.id,Owner.Profile.Name	
+                From Opportunity 
+                Where Id IN:ids And opportunity.owner.Dont_calculate_commission__c =: false ];
     }
     
     public static List<Opportunity> getOpportunitiesByIdAndDeveloperName(Set<Id> ids){
