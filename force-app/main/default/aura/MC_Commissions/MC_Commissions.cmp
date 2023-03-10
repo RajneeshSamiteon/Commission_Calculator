@@ -1,0 +1,98 @@
+<aura:component controller="MyCommissionController"
+                extends="c:HandleErrorModal"
+                access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.currentLoggedInUser}" action="{!c.handleUserChanges}"/>
+    
+    <aura:attribute name="monthList" type="List"/>
+    <aura:attribute name="yearList" type="List"/>
+    <aura:attribute name="selectedMonth" type="string"/>
+    <aura:attribute name="selectedYear" type="string"/>
+    <aura:attribute name="spinner" type="boolean" default="false"/>
+    <aura:attribute name="currentLoggedInUser" type="object" description="While intializing the component, This attribute will popuplate with current logged in user."/>
+    <aura:attribute name='MastermonthlyBreakDown' type="object[]" description="BreakDown For Current Logged in user"/> 
+    <aura:attribute name='monthlyBreakDown' type="object[]" description="BreakDown For Current Logged in user"/> 
+    <aura:attribute name='monthlyCommission' type="object[]" description="monthlyCommission For Current Logged in user"/> 
+    <div class="bodyStyle">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-col slds-size_1-of-12">
+                <lightning:icon iconName="action:record" size="small" alternativeText="Indicates approval"/>
+            </div>
+            <div class="slds-col slds-col slds-size_11-of-12">
+                <p class='heading'>Monthly Commission's Break-Down</p>
+            </div>
+        </div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <span><lightning:combobox name="progress" class="DatePicklistDesign" placeholder="Select year" options="{!v.yearList}" onchange = "{!c.updaterecordThroughYear}"/></span>
+            </div>
+            <div class="slds-col">
+                <span><lightning:combobox name="progress" class="DatePicklistDesign" placeholder="Select month" options="{!v.monthList}" onchange = "{!c.updaterecordThroughMonth}"/></span>
+            </div>
+        </div>
+        <aura:if isTrue="{!v.spinner}">
+            <lightning:spinner alternativeText="Loading" size="small" />
+            <aura:set attribute="else">
+                <div class='table'>
+                    <table class="slds-table slds-table--bordered slds-table--striped breakDownTable">
+                        <thead>
+                            <tr>
+                                <th scope="col"><span class="slds-truncate">Reference Name</span></th>
+                                <th scope="col"><span class="slds-truncate">Reference By</span></th>
+                                <th scope="col"><span class="slds-truncate">Total Sales</span></th>
+                                <th scope="col"><span class="slds-truncate">Total margin</span></th>
+                                <th scope="col"><span class="slds-truncate">Elgible Amount</span></th>
+                                <th scope="col"><span class="slds-truncate">Met Margin</span></th>
+                            </tr>
+                            
+                        </thead>
+                        <aura:if isTrue="{!Not(empty(v.monthlyBreakDown))}">
+                            <tbody>
+                                <aura:iteration items="{!v.monthlyBreakDown}" var="breakDown">
+                                    <tr>
+                                        <aura:if isTrue="{!breakDown.Opportunity__c}">
+                                            <td>{!breakDown.Opportunity__r.Name}</td>
+                                            <td><p>Opportunity</p></td>
+                                            <aura:set attribute="else">
+                                                <td>{!breakDown.Account__r.Name}</td>
+                                                <td><p>Account</p></td>
+                                            </aura:set>   
+                                        </aura:if>
+                                        <td>{!breakDown.Total_sales__c}</td>
+                                        <td>{!breakDown.Total_Margin__c}</td>
+                                        <td>{!breakDown.Elgible_Amount__c}</td>
+                                        <td>{!breakDown.Met_Margin__c}</td>
+                                    </tr>
+                                </aura:iteration> 
+                            </tbody>
+                            <aura:set attribute="else">
+                                <tr>
+                                    <td colspan="4"> No Record for monthly Break-Down For selected Date</td>
+                                </tr>
+                            </aura:set>
+                        </aura:if>
+                    </table>
+                </div>
+            </aura:set>
+        </aura:if>
+        <div class="slds-grid slds-gutters slds-m-top_large">
+            <div class="slds-col slds-col slds-size_1-of-12">
+                <lightning:icon iconName="action:record" size="small" alternativeText="Indicates approval"/>
+            </div>
+            <div class="slds-col slds-col slds-size_11-of-12">
+                <p class='heading'>Monthly Commission's</p>
+            </div>            
+        </div>
+        <div class="slds-grid slds-gutters slds-m-top_large">
+            <div class="slds-col slds-col slds-size_4-of-12">
+                <div class = 'commissionDetailBox'></div>
+            </div>
+            <div class="slds-col slds-col slds-size_4-of-12">
+                <div class = 'commissionDetailBox'></div>
+            </div>
+            <div class="slds-col slds-col slds-size_4-of-12">
+                <div class = 'commissionDetailBox'></div>
+            </div>
+        </div>
+    </div>
+</aura:component>
