@@ -1,0 +1,29 @@
+.THIS.bodyStyle{
+    width: 100%;
+    background: white;
+    padding: 2%;
+}
+.THIS .DatePicklistDesign{
+    margin-bottom: 2%;
+}
+.THIS .breakDownTable{
+    max-height: 70vh;
+    overflow: auto;
+    /* box-shadow: 5px 5px 20px rgb(61 61 61); */
+    border: 1px solid rgb(137 137 137 / 38%);
+}
+.THIS .heading{
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    top: 1vh;
+}
+.THIS .table{
+    max-height: 50vh;
+    overflow: auto;
+    max-width: 100vw;
+}
+.THIS .commissionDetailBox{
+    border: 2px solid red;
+    height: 16vh;
+}
