@@ -1,6 +1,6 @@
 public class EOYSalesCommissionHandler {
-    public static void eOYSalesRepAnD(Map<id ,Monthly_commission__c> monthlyCommssionByEoySalesId , EOY_sales_commission__c eoySalesCommission , 
-                                      commission_master__c commissionMaster , Map<id, List<EoY_GP_Target_Bonus__c>> gPTargetBonus) 
+    public static void eOYSalesRepAnD(Map<Id ,Monthly_commission__c> monthlyCommssionByEoySalesId , EOY_sales_commission__c eoySalesCommission , 
+                                      commission_master__c commissionMaster , Map<Id, List<EoY_GP_Target_Bonus__c>> gPTargetBonus) 
     {
         monthly_commission__c monthlyCommission = new monthly_commission__c();
         monthlyCommission = monthlyCommssionByEoySalesId.get(eoySalesCommission.id);
