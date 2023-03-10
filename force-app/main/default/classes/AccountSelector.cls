@@ -10,8 +10,13 @@ public without sharing class AccountSelector {
                                     Remodel__c,
                                     Industry_Focus__c FROM Account WHERE Id IN :ids]);
     }
+    
     public static List<Account> getAccountById(Set<Id> ids){
         return [SELECT Id,OwnerId,Owner.Profile.Name,Name,Account_Category__c,AccountNumber,Phone,Email__c,BillingStreet, BillingCity, BillingState, BillingPostalCode, BillingCountry  FROM Account WHERE Id IN :ids];
+    }
+    
+    public static List<Account> getAccountsByIdsWithCalculateCommissionEnable(Set<Id> ids){
+        return [SELECT Id,OwnerId,account.owner.Dont_calculate_commission__c,Owner.Profile.Name,Name,Account_Category__c,AccountNumber,Phone,Email__c,BillingStreet, BillingCity, BillingState, BillingPostalCode, BillingCountry  FROM Account WHERE Id IN :ids and account.owner.Dont_calculate_commission__c =false];
     }
     public static List<Account> getAccountCreatedInMonthByUser(){
         Date startOfMonth = Date.today().toStartOfMonth();
